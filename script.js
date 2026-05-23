@@ -36,7 +36,7 @@ contactForm?.addEventListener("submit", (event) => {
     String(message),
   ].join("\n");
 
-  window.location.href = `mailto:?subject=${encodeURIComponent(
+  window.location.href = `mailto:mail@prizenes.com?subject=${encodeURIComponent(
     "健康経営サポートの相談"
   )}&body=${encodeURIComponent(body)}`;
 });
