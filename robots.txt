@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://priseness-health-support.vercel.app/sitemap.xml
