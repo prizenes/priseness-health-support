@@ -114,6 +114,82 @@ const categorySettings = {
 
 const importantQuestions = [2, 5, 7, 8, 19, 22];
 
+const riskQuestionTexts = {
+  1: "中腰・前かがみ姿勢で行う作業が多い",
+  2: "重い物を持つ、運ぶ、押す、引く作業がある",
+  3: "ひねり動作や、無理な姿勢での作業がある",
+  4: "長時間の立ち仕事、または長時間の座り仕事が多い",
+  5: "腰痛・肩こり・膝痛などを訴える従業員がいる",
+  6: "身体の使い方や作業姿勢について、専門的な指導を受けたことがない",
+  7: "床が滑りやすい、または濡れやすい場所がある",
+  8: "段差、コード、物品など、つまずきやすい場所がある",
+  9: "通路が狭い、物が置かれている、動線が悪い場所がある",
+  10: "階段や傾斜、暗い場所での移動がある",
+  11: "急いで移動する、荷物を持って移動する場面が多い",
+  12: "50代以上の従業員が増えている",
+  13: "体力低下や疲れやすさを感じている従業員がいる",
+  14: "視力低下、反応の遅れ、バランス低下が心配な従業員がいる",
+  15: "年齢や体力に応じた作業量・休憩・配置の見直しが十分ではない",
+  16: "転倒・腰痛・筋力低下に対する予防的な取り組みを行っていない",
+  17: "健康診断後のフォローが十分にできていない",
+  18: "痛みや体調不良を相談しやすい体制がない",
+  19: "体調不良・痛み・ケガによる欠勤や休職がある",
+  20: "従業員の運動不足や生活習慣の乱れが気になっている",
+  21: "健康づくりの取り組みが単発で終わり、継続できていない",
+  22: "人手不足により、一人あたりの身体的負担が大きい",
+  23: "休憩が取りにくい、または休憩時間が不規則である",
+  24: "疲労感、睡眠不足、集中力低下を訴える従業員がいる",
+  25: "職場のストレスや人間関係が、体調不良に影響している可能性がある",
+  26: "従業員の身体的な負担や不調を、会社として把握できていない",
+  27: "腰痛・転倒・ケガ予防について、職場全体で学ぶ機会がない",
+  28: "作業動作や職場環境を、外部専門家に見てもらったことがない",
+  29: "健康経営に取り組みたいが、何から始めればよいかわからない",
+  30: "健康づくりの担当者や、継続的に改善する仕組みがない",
+};
+
+const categoryMaxScores = {
+  a: 12,
+  b: 10,
+  c: 10,
+  d: 10,
+  e: 8,
+  f: 10,
+};
+
+function renderRiskQuestions() {
+  const categoriesRoot = riskForm?.querySelector("[data-risk-categories]");
+  if (!categoriesRoot || categoriesRoot.children.length > 0) return;
+
+  categoriesRoot.innerHTML = Object.entries(categorySettings)
+    .map(([key, category]) => {
+      const questions = category.questions
+        .map((questionNumber) => {
+          const important = importantQuestions.includes(questionNumber) ? " important" : "";
+          return `
+            <div class="risk-question${important}">
+              <span>${questionNumber}. ${riskQuestionTexts[questionNumber]}</span>
+              <div class="score-options">
+                <label><input type="radio" name="q${questionNumber}" value="0" checked />0</label>
+                <label><input type="radio" name="q${questionNumber}" value="1" />1</label>
+                <label><input type="radio" name="q${questionNumber}" value="2" />2</label>
+              </div>
+            </div>
+          `;
+        })
+        .join("");
+
+      return `
+        <fieldset class="risk-category" data-category="${key}">
+          <legend>${category.title} <small>${categoryMaxScores[key]}点満点</small></legend>
+          <div class="risk-options">${questions}</div>
+        </fieldset>
+      `;
+    })
+    .join("");
+}
+
+renderRiskQuestions();
+
 function getQuestionScore(questionNumber) {
   const selected = riskForm?.querySelector(`input[name="q${questionNumber}"]:checked`);
   return Number(selected?.value || 0);
@@ -195,7 +271,7 @@ riskForm?.addEventListener("submit", (event) => {
     <div class="risk-cta">
       <strong>職場の健康リスクが気になる企業様へ</strong>
       <p>プライズネス健康経営サポートでは、理学療法士が職場を訪問し、従業員の身体機能・作業動作・職場環境を確認します。腰痛・転倒・ケガの予防に向けて、現場に合わせた改善提案を行います。</p>
-      <a class="button button-primary" href="#contact">無料相談はこちら</a>
+      <a class="button button-primary" href="/#contact">無料相談はこちら</a>
     </div>
   `;
 });

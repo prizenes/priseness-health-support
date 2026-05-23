@@ -328,6 +328,17 @@ h3 {
   padding: clamp(76px, 10vw, 132px) clamp(20px, 4vw, 56px);
 }
 
+.page-hero {
+  padding: clamp(82px, 12vw, 150px) clamp(20px, 4vw, 56px) clamp(56px, 8vw, 96px);
+  background:
+    linear-gradient(120deg, rgba(247, 241, 231, 0.92), rgba(238, 246, 242, 0.92)),
+    var(--paper);
+}
+
+.page-hero .section-inner {
+  max-width: 980px;
+}
+
 .section-inner {
   width: min(1120px, 100%);
   margin: 0 auto;
@@ -343,6 +354,14 @@ h3 {
 .section-heading {
   max-width: 830px;
   margin-bottom: 36px;
+}
+
+.section-heading-with-action {
+  display: flex;
+  max-width: none;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
 }
 
 .section-heading p:not(.eyebrow),
@@ -491,6 +510,10 @@ h3 {
   gap: 16px;
 }
 
+.service-list-detailed {
+  align-items: stretch;
+}
+
 .service-list article {
   overflow: hidden;
   padding: 0 0 24px;
@@ -530,6 +553,16 @@ h3 {
 
 .service-photo-6 {
   background-image: url("./service-health-seminar.png");
+}
+
+.check-list {
+  display: grid;
+  gap: 8px;
+  padding: 0 24px 0 44px;
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
 }
 
 .representative {
@@ -928,10 +961,31 @@ h3 {
   line-height: 1.75;
 }
 
+.cta-band {
+  color: var(--white);
+  background: var(--navy);
+}
+
+.cta-band h2,
+.cta-band .eyebrow {
+  color: var(--white);
+}
+
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
 .plan-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
+}
+
+.plan-detail-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .plan-grid article {
@@ -963,6 +1017,58 @@ h3 {
   color: var(--navy);
   font-size: 22px;
   line-height: 1.25;
+}
+
+.subsidy-preview {
+  background: var(--soft);
+}
+
+.subsidy-card {
+  display: grid;
+  gap: 16px;
+  padding: clamp(26px, 5vw, 48px);
+  border: 1px solid #d9e5d9;
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(247, 241, 231, 0.82)),
+    var(--white);
+  box-shadow: var(--shadow);
+}
+
+.subsidy-card p {
+  max-width: 920px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.subsidy-card .small-note,
+.small-note {
+  color: #66746d;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 8px 0;
+}
+
+.info-grid article {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.info-grid p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
 }
 
 .contact {
@@ -1083,7 +1189,8 @@ h3 {
   .concern-grid,
   .risk-overview,
   .plan-grid,
-  .flow-grid {
+  .flow-grid,
+  .info-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -1136,8 +1243,18 @@ h3 {
   .risk-scale,
   .risk-overview,
   .plan-grid,
-  .flow-grid {
+  .flow-grid,
+  .info-grid {
     grid-template-columns: 1fr;
+  }
+
+  .section-heading-with-action {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .cta-actions {
+    justify-content: stretch;
   }
 
   .workplace-photo,
