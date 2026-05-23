@@ -171,7 +171,7 @@ textarea {
   border-radius: 8px;
   background:
     linear-gradient(180deg, rgba(11, 32, 56, 0), rgba(11, 32, 56, 0.38)),
-    url("https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1100&q=82") center / cover;
+    url("./workplace-visit.png") center / cover;
   box-shadow: var(--shadow);
 }
 
@@ -540,7 +540,7 @@ h3 {
   border-radius: 8px;
   background:
     linear-gradient(180deg, rgba(11, 32, 56, 0.02), rgba(11, 32, 56, 0.5)),
-    url("./narita-satoshi.jpg") 58% 38% / cover;
+    url("./narita-satoshi-suit.jpg") 54% 30% / cover;
   box-shadow: var(--shadow);
 }
 
