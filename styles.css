@@ -26,6 +26,7 @@ body {
   margin: 0;
   color: var(--ink);
   background: var(--paper);
+  font-size: 16px;
   font-family:
     "Hiragino Sans", "Yu Gothic", "YuGothic", "Noto Sans JP", system-ui,
     sans-serif;
@@ -41,6 +42,7 @@ button,
 input,
 textarea {
   font: inherit;
+  font-size: 16px;
 }
 
 .site-header {
@@ -83,13 +85,13 @@ textarea {
 }
 
 .brand-name {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
 }
 
 .brand-sub {
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .site-nav {
@@ -102,7 +104,7 @@ textarea {
   padding: 10px 14px;
   color: var(--muted);
   border-radius: 7px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
 }
 
@@ -189,18 +191,19 @@ textarea {
 }
 
 .assessment-card strong {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .assessment-card small {
   color: rgba(255, 255, 255, 0.86);
+  font-size: 15px;
 }
 
 .eyebrow,
 .panel-label {
   margin: 0 0 12px;
   color: var(--green);
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 800;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -223,14 +226,14 @@ h1 {
 
 h2 {
   margin-bottom: 18px;
-  font-size: clamp(28px, 4vw, 48px);
+  font-size: clamp(28px, 3vw, 34px);
   line-height: 1.2;
   letter-spacing: 0;
 }
 
 h3 {
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.35;
 }
 
@@ -265,6 +268,7 @@ h3 {
   border: 1px solid transparent;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 16px;
   font-weight: 800;
 }
 
@@ -307,12 +311,13 @@ h3 {
 
 .hero-points dt {
   color: var(--green);
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 800;
 }
 
 .hero-points dd {
   margin: 3px 0 0;
+  font-size: 18px;
   font-weight: 800;
 }
 
@@ -349,6 +354,8 @@ h3 {
 .plan-grid p,
 .steps p {
   color: var(--muted);
+  font-size: 17px;
+  line-height: 1.8;
 }
 
 .relationship {
@@ -371,6 +378,8 @@ h3 {
   border: 1px solid #eadfce;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.86);
+  font-size: 18px;
+  line-height: 1.65;
   font-weight: 800;
 }
 
@@ -414,7 +423,7 @@ h3 {
   display: inline-flex;
   margin-bottom: 10px;
   color: var(--blue);
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 800;
 }
 
@@ -581,6 +590,7 @@ h3 {
 
 .staff-card h3 {
   color: var(--navy);
+  font-size: 24px;
 }
 
 .flow {
@@ -710,11 +720,13 @@ h3 {
 
 .risk-overview strong {
   color: var(--navy);
-  font-size: 18px;
+  font-size: 19px;
 }
 
 .risk-overview span {
   color: var(--muted);
+  font-size: 17px;
+  line-height: 1.75;
 }
 
 .risk-details {
@@ -756,6 +768,8 @@ h3 {
 
 .risk-form-heading p {
   color: var(--muted);
+  font-size: 17px;
+  line-height: 1.75;
 }
 
 .risk-scale {
@@ -770,6 +784,7 @@ h3 {
   border-radius: 8px;
   color: var(--green-dark);
   background: var(--soft);
+  font-size: 16px;
   font-weight: 800;
 }
 
@@ -791,12 +806,13 @@ h3 {
   color: var(--white);
   background: var(--green-dark);
   border-radius: 8px 8px 0 0;
+  font-size: 18px;
   font-weight: 900;
 }
 
 .risk-category small {
   color: rgba(255, 255, 255, 0.74);
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .risk-options {
@@ -813,6 +829,8 @@ h3 {
   align-items: center;
   padding: 14px 16px;
   background: var(--white);
+  font-size: 17px;
+  line-height: 1.65;
   font-weight: 700;
 }
 
@@ -836,7 +854,7 @@ h3 {
 
 .score-options label {
   display: inline-flex;
-  min-height: 38px;
+  min-height: 44px;
   align-items: center;
   justify-content: center;
   gap: 5px;
@@ -844,6 +862,7 @@ h3 {
   border-radius: 8px;
   background: #f8faf8;
   cursor: pointer;
+  font-size: 16px;
   font-weight: 900;
 }
 
@@ -858,6 +877,8 @@ h3 {
   border-radius: 8px;
   color: var(--green-dark);
   background: var(--soft);
+  font-size: 17px;
+  line-height: 1.75;
   font-weight: 700;
 }
 
@@ -903,7 +924,8 @@ h3 {
   border-radius: 8px;
   color: var(--muted);
   background: #f8faf8;
-  font-size: 13px;
+  font-size: 15px;
+  line-height: 1.75;
 }
 
 .plan-grid {
@@ -979,31 +1001,42 @@ h3 {
 .contact-form label {
   display: grid;
   gap: 6px;
+  font-size: 16px;
   font-weight: 800;
 }
 
 .contact-form span {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
+  min-height: 48px;
   border: 1px solid var(--line);
   border-radius: 7px;
-  padding: 11px 12px;
+  padding: 12px 14px;
   color: var(--ink);
   background: #f8faf8;
+  font-size: 16px;
+  line-height: 1.7;
 }
 
 .contact-form textarea {
+  min-height: 132px;
   resize: vertical;
+}
+
+.contact-form button {
+  min-height: 52px;
+  font-size: 17px;
 }
 
 .form-note {
   margin: 0;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 15px;
+  line-height: 1.7;
 }
 
 .site-footer {
@@ -1092,7 +1125,7 @@ h3 {
   }
 
   h2 {
-    font-size: clamp(26px, 8vw, 36px);
+    font-size: clamp(28px, 8vw, 34px);
   }
 
   .hero-points,
