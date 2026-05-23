@@ -177,8 +177,27 @@ textarea {
   box-shadow: var(--shadow);
 }
 
+.workplace-photo img,
+.representative-photo img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.workplace-photo img {
+  object-position: 50% 50%;
+}
+
+.representative-photo img {
+  object-position: 55% 28%;
+}
+
 .assessment-card {
   position: absolute;
+  z-index: 2;
   right: 22px;
   bottom: 22px;
   display: grid;
@@ -244,6 +263,14 @@ h3 {
   font-size: clamp(18px, 2.2vw, 24px);
   line-height: 1.75;
   font-weight: 600;
+}
+
+.local-seo-copy {
+  max-width: 760px;
+  margin: -10px 0 26px;
+  color: #405149;
+  font-size: 17px;
+  line-height: 1.8;
 }
 
 .hero-actions,
@@ -526,9 +553,31 @@ h3 {
 }
 
 .service-photo {
-  height: 170px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  min-height: 190px;
   margin: 0 0 22px;
   background: var(--soft) center / cover;
+}
+
+.service-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.service-list-detailed .service-photo {
+  min-height: 230px;
+}
+
+.service-list article:nth-child(3) .service-photo img {
+  object-position: center top;
+}
+
+.service-list article:nth-child(6) .service-photo img {
+  object-position: center top;
 }
 
 .service-photo-1 {
@@ -577,6 +626,7 @@ h3 {
 }
 
 .representative-photo {
+  position: relative;
   min-height: 520px;
   overflow: hidden;
   border-radius: 8px;
@@ -587,6 +637,8 @@ h3 {
 }
 
 .photo-placeholder {
+  position: relative;
+  z-index: 2;
   display: grid;
   height: 100%;
   min-height: 520px;
@@ -1146,6 +1198,8 @@ h3 {
 }
 
 .site-footer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
   justify-content: space-between;
   gap: 18px;
   padding: 28px clamp(20px, 4vw, 56px);
@@ -1161,6 +1215,15 @@ h3 {
 .site-footer div {
   display: grid;
   gap: 2px;
+}
+
+.site-footer span {
+  display: block;
+}
+
+.site-footer a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 @media (max-width: 940px) {
@@ -1289,6 +1352,6 @@ h3 {
 
   .site-footer {
     align-items: flex-start;
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
