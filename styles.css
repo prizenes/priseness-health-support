@@ -521,15 +521,15 @@ h3 {
 }
 
 .service-photo-4 {
-  background-image: url("https://images.unsplash.com/photo-1571019613914-85f342c6a11e?auto=format&fit=crop&w=800&q=78");
+  background-image: url("./service-exercise-guidance.png");
 }
 
 .service-photo-5 {
-  background-image: url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=78");
+  background-image: url("./service-workplace-improvement.png");
 }
 
 .service-photo-6 {
-  background-image: url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=78");
+  background-image: url("./service-health-seminar.png");
 }
 
 .representative {
