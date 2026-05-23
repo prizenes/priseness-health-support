@@ -509,15 +509,15 @@ h3 {
 }
 
 .service-photo-1 {
-  background-image: url("https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=78");
+  background-image: url("./service-work-movement.png");
 }
 
 .service-photo-2 {
-  background-image: url("https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=800&q=78");
+  background-image: url("./service-body-check.png");
 }
 
 .service-photo-3 {
-  background-image: url("https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=800&q=78");
+  background-image: url("./service-risk-evaluation.png");
 }
 
 .service-photo-4 {
