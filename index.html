@@ -33,6 +33,7 @@
       <nav class="site-nav" id="site-nav" data-nav>
         <a href="#issues">課題</a>
         <a href="#service">サービス</a>
+        <a href="#risk-check">簡易チェック</a>
         <a href="#plans">プラン</a>
         <a href="#contact">相談する</a>
       </nav>
@@ -62,6 +63,7 @@
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#contact">無料相談を申し込む</a>
+            <a class="button button-secondary" href="#risk-check">3分チェックを試す</a>
             <a class="button button-secondary" href="#service">サービス内容を見る</a>
           </div>
           <dl class="hero-points" aria-label="サービスの特徴">
@@ -236,6 +238,112 @@
             <div>健康経営のPR</div>
             <div>従業員満足度向上</div>
           </div>
+        </div>
+      </section>
+
+      <section class="section risk-check" id="risk-check">
+        <div class="section-inner">
+          <div class="risk-intro">
+            <div>
+              <p class="eyebrow">Quick Check</p>
+              <h2>職場の健康リスクを、3分で簡易チェック。</h2>
+              <p>
+                腰痛・転倒・労災リスクにつながりやすい職場の状態を、まずは簡単に確認できます。結果は診断ではなく、相談や職場改善を始めるための目安です。
+              </p>
+            </div>
+            <a class="risk-banner" href="#risk-form" aria-label="職場の健康リスク簡易チェックを開始">
+              <img src="./risk-check-banner.png" alt="職場の健康リスク簡易チェック 3分で確認 今すぐチェック" />
+            </a>
+          </div>
+
+          <form class="risk-form" id="risk-form" data-risk-form>
+            <div class="risk-form-heading">
+              <h3>プライズネス式 職場の健康リスク簡易チェック表</h3>
+              <p>各項目について、0点「いいえ／ほとんどない」、1点「少しある／わからない」、2点「はい／よくある」で回答してください。合計60点満点です。</p>
+            </div>
+
+            <div class="risk-scale" aria-label="点数の目安">
+              <span>0点：いいえ／ほとんどない</span>
+              <span>1点：少しある／わからない</span>
+              <span>2点：はい／よくある</span>
+            </div>
+
+            <div class="risk-categories">
+              <fieldset class="risk-category" data-category="a">
+                <legend>A. 腰痛・身体負担リスク <small>12点満点</small></legend>
+                <div class="risk-options">
+                  <div class="risk-question"><span>1. 中腰・前かがみ姿勢で行う作業が多い</span><div class="score-options"><label><input type="radio" name="q1" value="0" checked />0</label><label><input type="radio" name="q1" value="1" />1</label><label><input type="radio" name="q1" value="2" />2</label></div></div>
+                  <div class="risk-question important"><span>2. 重い物を持つ、運ぶ、押す、引く作業がある</span><div class="score-options"><label><input type="radio" name="q2" value="0" checked />0</label><label><input type="radio" name="q2" value="1" />1</label><label><input type="radio" name="q2" value="2" />2</label></div></div>
+                  <div class="risk-question"><span>3. ひねり動作や、無理な姿勢での作業がある</span><div class="score-options"><label><input type="radio" name="q3" value="0" checked />0</label><label><input type="radio" name="q3" value="1" />1</label><label><input type="radio" name="q3" value="2" />2</label></div></div>
+                  <div class="risk-question"><span>4. 長時間の立ち仕事、または長時間の座り仕事が多い</span><div class="score-options"><label><input type="radio" name="q4" value="0" checked />0</label><label><input type="radio" name="q4" value="1" />1</label><label><input type="radio" name="q4" value="2" />2</label></div></div>
+                  <div class="risk-question important"><span>5. 腰痛・肩こり・膝痛などを訴える従業員がいる</span><div class="score-options"><label><input type="radio" name="q5" value="0" checked />0</label><label><input type="radio" name="q5" value="1" />1</label><label><input type="radio" name="q5" value="2" />2</label></div></div>
+                  <div class="risk-question"><span>6. 身体の使い方や作業姿勢について、専門的な指導を受けたことがない</span><div class="score-options"><label><input type="radio" name="q6" value="0" checked />0</label><label><input type="radio" name="q6" value="1" />1</label><label><input type="radio" name="q6" value="2" />2</label></div></div>
+                </div>
+              </fieldset>
+
+              <fieldset class="risk-category" data-category="b">
+                <legend>B. 転倒・移動リスク <small>10点満点</small></legend>
+                <div class="risk-options">
+                  <div class="risk-question important"><span>7. 床が滑りやすい、または濡れやすい場所がある</span><div class="score-options"><label><input type="radio" name="q7" value="0" checked />0</label><label><input type="radio" name="q7" value="1" />1</label><label><input type="radio" name="q7" value="2" />2</label></div></div>
+                  <div class="risk-question important"><span>8. 段差、コード、物品など、つまずきやすい場所がある</span><div class="score-options"><label><input type="radio" name="q8" value="0" checked />0</label><label><input type="radio" name="q8" value="1" />1</label><label><input type="radio" name="q8" value="2" />2</label></div></div>
+                  <div class="risk-question"><span>9. 通路が狭い、物が置かれている、動線が悪い場所がある</span><div class="score-options"><label><input type="radio" name="q9" value="0" checked />0</label><label><input type="radio" name="q9" value="1" />1</label><label><input type="radio" name="q9" value="2" />2</label></div></div>
+                  <div class="risk-question"><span>10. 階段や傾斜、暗い場所での移動がある</span><div class="score-options"><label><input type="radio" name="q10" value="0" checked />0</label><label><input type="radio" name="q10" value="1" />1</label><label><input type="radio" name="q10" value="2" />2</label></div></div>
+                  <div class="risk-question"><span>11. 急いで移動する、荷物を持って移動する場面が多い</span><div class="score-options"><label><input type="radio" name="q11" value="0" checked />0</label><label><input type="radio" name="q11" value="1" />1</label><label><input type="radio" name="q11" value="2" />2</label></div></div>
+                </div>
+              </fieldset>
+
+              <fieldset class="risk-category" data-category="c">
+                <legend>C. 高年齢労働者・体力低下リスク <small>10点満点</small></legend>
+                <div class="risk-options">
+                  <div class="risk-question"><span>12. 50代以上の従業員が増えている</span><div class="score-options"><label><input type="radio" name="q12" value="0" checked />0</label><label><input type="radio" name="q12" value="1" />1</label><label><input type="radio" name="q12" value="2" />2</label></div></div>
+                  <div class="risk-question"><span>13. 体力低下や疲れやすさを感じている従業員がいる</span><div class="score-options"><label><input type="radio" name="q13" value="0" checked />0</label><label><input type="radio" name="q13" value="1" />1</label><label><input type="radio" name="q13" value="2" />2</label></div></div>
+                  <div class="risk-question"><span>14. 視力低下、反応の遅れ、バランス低下が心配な従業員がいる</span><div class="score-options"><label><input type="radio" name="q14" value="0" checked />0</label><label><input type="radio" name="q14" value="1" />1</label><label><input type="radio" name="q14" value="2" />2</label></div></div>
+                  <div class="risk-question"><span>15. 年齢や体力に応じた作業量・休憩・配置の見直しが十分ではない</span><div class="score-options"><label><input type="radio" name="q15" value="0" checked />0</label><label><input type="radio" name="q15" value="1" />1</label><label><input type="radio" name="q15" value="2" />2</label></div></div>
+                  <div class="risk-question"><span>16. 転倒・腰痛・筋力低下に対する予防的な取り組みを行っていない</span><div class="score-options"><label><input type="radio" name="q16" value="0" checked />0</label><label><input type="radio" name="q16" value="1" />1</label><label><input type="radio" name="q16" value="2" />2</label></div></div>
+                </div>
+              </fieldset>
+
+              <fieldset class="risk-category" data-category="d">
+                <legend>D. 健康管理・不調把握リスク <small>10点満点</small></legend>
+                <div class="risk-options">
+                  <div class="risk-question"><span>17. 健康診断後のフォローが十分にできていない</span><div class="score-options"><label><input type="radio" name="q17" value="0" checked />0</label><label><input type="radio" name="q17" value="1" />1</label><label><input type="radio" name="q17" value="2" />2</label></div></div>
+                  <div class="risk-question"><span>18. 痛みや体調不良を相談しやすい体制がない</span><div class="score-options"><label><input type="radio" name="q18" value="0" checked />0</label><label><input type="radio" name="q18" value="1" />1</label><label><input type="radio" name="q18" value="2" />2</label></div></div>
+                  <div class="risk-question important"><span>19. 体調不良・痛み・ケガによる欠勤や休職がある</span><div class="score-options"><label><input type="radio" name="q19" value="0" checked />0</label><label><input type="radio" name="q19" value="1" />1</label><label><input type="radio" name="q19" value="2" />2</label></div></div>
+                  <div class="risk-question"><span>20. 従業員の運動不足や生活習慣の乱れが気になっている</span><div class="score-options"><label><input type="radio" name="q20" value="0" checked />0</label><label><input type="radio" name="q20" value="1" />1</label><label><input type="radio" name="q20" value="2" />2</label></div></div>
+                  <div class="risk-question"><span>21. 健康づくりの取り組みが単発で終わり、継続できていない</span><div class="score-options"><label><input type="radio" name="q21" value="0" checked />0</label><label><input type="radio" name="q21" value="1" />1</label><label><input type="radio" name="q21" value="2" />2</label></div></div>
+                </div>
+              </fieldset>
+
+              <fieldset class="risk-category" data-category="e">
+                <legend>E. 疲労・メンタル・働き方リスク <small>8点満点</small></legend>
+                <div class="risk-options">
+                  <div class="risk-question important"><span>22. 人手不足により、一人あたりの身体的負担が大きい</span><div class="score-options"><label><input type="radio" name="q22" value="0" checked />0</label><label><input type="radio" name="q22" value="1" />1</label><label><input type="radio" name="q22" value="2" />2</label></div></div>
+                  <div class="risk-question"><span>23. 休憩が取りにくい、または休憩時間が不規則である</span><div class="score-options"><label><input type="radio" name="q23" value="0" checked />0</label><label><input type="radio" name="q23" value="1" />1</label><label><input type="radio" name="q23" value="2" />2</label></div></div>
+                  <div class="risk-question"><span>24. 疲労感、睡眠不足、集中力低下を訴える従業員がいる</span><div class="score-options"><label><input type="radio" name="q24" value="0" checked />0</label><label><input type="radio" name="q24" value="1" />1</label><label><input type="radio" name="q24" value="2" />2</label></div></div>
+                  <div class="risk-question"><span>25. 職場のストレスや人間関係が、体調不良に影響している可能性がある</span><div class="score-options"><label><input type="radio" name="q25" value="0" checked />0</label><label><input type="radio" name="q25" value="1" />1</label><label><input type="radio" name="q25" value="2" />2</label></div></div>
+                </div>
+              </fieldset>
+
+              <fieldset class="risk-category" data-category="f">
+                <legend>F. 職場改善・健康経営体制リスク <small>10点満点</small></legend>
+                <div class="risk-options">
+                  <div class="risk-question"><span>26. 従業員の身体的な負担や不調を、会社として把握できていない</span><div class="score-options"><label><input type="radio" name="q26" value="0" checked />0</label><label><input type="radio" name="q26" value="1" />1</label><label><input type="radio" name="q26" value="2" />2</label></div></div>
+                  <div class="risk-question"><span>27. 腰痛・転倒・ケガ予防について、職場全体で学ぶ機会がない</span><div class="score-options"><label><input type="radio" name="q27" value="0" checked />0</label><label><input type="radio" name="q27" value="1" />1</label><label><input type="radio" name="q27" value="2" />2</label></div></div>
+                  <div class="risk-question"><span>28. 作業動作や職場環境を、外部専門家に見てもらったことがない</span><div class="score-options"><label><input type="radio" name="q28" value="0" checked />0</label><label><input type="radio" name="q28" value="1" />1</label><label><input type="radio" name="q28" value="2" />2</label></div></div>
+                  <div class="risk-question"><span>29. 健康経営に取り組みたいが、何から始めればよいかわからない</span><div class="score-options"><label><input type="radio" name="q29" value="0" checked />0</label><label><input type="radio" name="q29" value="1" />1</label><label><input type="radio" name="q29" value="2" />2</label></div></div>
+                  <div class="risk-question"><span>30. 健康づくりの担当者や、継続的に改善する仕組みがない</span><div class="score-options"><label><input type="radio" name="q30" value="0" checked />0</label><label><input type="radio" name="q30" value="1" />1</label><label><input type="radio" name="q30" value="2" />2</label></div></div>
+                </div>
+              </fieldset>
+            </div>
+
+            <button class="button button-primary" type="submit">結果を判定する</button>
+            <div class="risk-result" data-risk-result>
+              回答後に、総合リスク・カテゴリ別リスク・おすすめの相談内容を表示します。
+            </div>
+            <p class="risk-note">
+              本チェックは、職場における健康課題や労災予防上の課題を簡易的に確認するためのものです。医療的診断、疾病リスクの判定、労働災害発生の予測を行うものではありません。具体的な対応が必要な場合は、産業医、主治医、社会保険労務士、安全衛生担当者等と連携のうえ、適切な対応をご検討ください。
+            </p>
+          </form>
         </div>
       </section>
 

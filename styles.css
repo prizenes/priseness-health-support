@@ -460,6 +460,216 @@ h3 {
   font-weight: 800;
 }
 
+.risk-check {
+  background: var(--paper);
+}
+
+.risk-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(340px, 1.18fr);
+  gap: clamp(24px, 5vw, 58px);
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.risk-intro p:not(.eyebrow) {
+  color: var(--muted);
+}
+
+.risk-banner {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.risk-banner:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 28px 70px rgba(23, 32, 28, 0.18);
+}
+
+.risk-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.risk-form {
+  display: grid;
+  gap: 22px;
+  padding: clamp(22px, 4vw, 36px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.risk-form-heading {
+  display: grid;
+  gap: 6px;
+}
+
+.risk-form-heading h3,
+.risk-form-heading p {
+  margin: 0;
+}
+
+.risk-form-heading p {
+  color: var(--muted);
+}
+
+.risk-scale {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.risk-scale span {
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--green-dark);
+  background: var(--soft);
+  font-weight: 800;
+}
+
+.risk-categories {
+  display: grid;
+  gap: 18px;
+}
+
+.risk-category {
+  padding: 0;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfdfb;
+}
+
+.risk-category legend {
+  padding: 14px 18px;
+  color: var(--white);
+  background: var(--green-dark);
+  border-radius: 8px 8px 0 0;
+  font-weight: 900;
+}
+
+.risk-category small {
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 12px;
+}
+
+.risk-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  background: var(--line);
+}
+
+.risk-question {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+  padding: 14px 16px;
+  background: var(--white);
+  font-weight: 700;
+}
+
+.risk-question.important span::after {
+  content: "重要";
+  display: inline-flex;
+  margin-left: 8px;
+  padding: 2px 7px;
+  color: var(--green-dark);
+  background: var(--soft);
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.score-options {
+  display: grid;
+  grid-template-columns: repeat(3, 52px);
+  gap: 6px;
+}
+
+.score-options label {
+  display: inline-flex;
+  min-height: 38px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8faf8;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.score-options input {
+  accent-color: var(--green);
+}
+
+.risk-result {
+  display: block;
+  padding: 18px;
+  border-left: 5px solid var(--green);
+  border-radius: 8px;
+  color: var(--green-dark);
+  background: var(--soft);
+  font-weight: 700;
+}
+
+.risk-result h4 {
+  margin: 0 0 8px;
+  font-size: 24px;
+}
+
+.risk-result p,
+.risk-result ul {
+  margin: 0 0 12px;
+}
+
+.risk-result ul {
+  padding-left: 20px;
+}
+
+.risk-alert {
+  padding: 14px;
+  margin: 16px 0;
+  border: 1px solid #e8cf8c;
+  border-radius: 8px;
+  color: #57410c;
+  background: #fff6d9;
+}
+
+.risk-cta {
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.risk-cta .button {
+  width: fit-content;
+}
+
+.risk-note {
+  padding: 14px;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  background: #f8faf8;
+  font-size: 13px;
+}
+
 .plan-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -557,7 +767,8 @@ h3 {
   }
 
   .two-column,
-  .contact-inner {
+  .contact-inner,
+  .risk-intro {
     grid-template-columns: 1fr;
   }
 
@@ -612,8 +823,17 @@ h3 {
   .issue-grid,
   .service-list,
   .benefit-grid,
+  .risk-scale,
   .plan-grid {
     grid-template-columns: 1fr;
+  }
+
+  .risk-question {
+    grid-template-columns: 1fr;
+  }
+
+  .score-options {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .button {
