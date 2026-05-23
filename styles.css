@@ -1,15 +1,17 @@
 :root {
-  --ink: #17201c;
-  --muted: #5c6761;
-  --paper: #fbfaf6;
-  --soft: #eef3ee;
-  --line: #dbe3dc;
-  --green: #20715d;
-  --green-dark: #0f4f45;
-  --yellow: #e4b557;
-  --blue: #2c6f91;
+  --ink: #102235;
+  --muted: #5f6f7d;
+  --paper: #f7faf9;
+  --cream: #f7f1e7;
+  --soft: #eef6f2;
+  --line: #d8e2df;
+  --green: #126b50;
+  --green-dark: #064737;
+  --yellow: #c99a3d;
+  --blue: #123557;
+  --navy: #0b2038;
   --white: #ffffff;
-  --shadow: 0 22px 60px rgba(23, 32, 28, 0.14);
+  --shadow: 0 22px 60px rgba(10, 32, 56, 0.12);
 }
 
 * {
@@ -69,7 +71,7 @@ textarea {
   place-items: center;
   flex: 0 0 auto;
   color: var(--white);
-  background: var(--green-dark);
+  background: var(--navy);
   border-radius: 8px;
   font-weight: 800;
 }
@@ -105,7 +107,7 @@ textarea {
 }
 
 .site-nav a:hover {
-  color: var(--green-dark);
+  color: var(--navy);
   background: var(--soft);
 }
 
@@ -134,9 +136,7 @@ textarea {
   grid-template-columns: minmax(0, 1.03fr) minmax(420px, 0.97fr);
   align-items: center;
   overflow: hidden;
-  background:
-    linear-gradient(90deg, rgba(251, 250, 246, 0.98) 0%, rgba(251, 250, 246, 0.86) 48%, rgba(251, 250, 246, 0.14) 100%),
-    url("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1800&q=82") center right / cover;
+  background: linear-gradient(135deg, var(--paper), var(--cream));
 }
 
 .hero::after {
@@ -146,7 +146,7 @@ textarea {
   left: 0;
   height: 88px;
   content: "";
-  background: linear-gradient(180deg, rgba(251, 250, 246, 0), var(--paper));
+  background: linear-gradient(180deg, rgba(247, 250, 249, 0), var(--paper));
   pointer-events: none;
 }
 
@@ -158,7 +158,42 @@ textarea {
 }
 
 .hero-visual {
-  display: none;
+  position: relative;
+  z-index: 2;
+  padding: clamp(28px, 5vw, 72px) clamp(20px, 5vw, 72px) clamp(48px, 6vw, 86px) 0;
+}
+
+.workplace-photo {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+  border: 10px solid var(--white);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(11, 32, 56, 0), rgba(11, 32, 56, 0.38)),
+    url("https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1100&q=82") center / cover;
+  box-shadow: var(--shadow);
+}
+
+.assessment-card {
+  position: absolute;
+  right: 22px;
+  bottom: 22px;
+  display: grid;
+  gap: 3px;
+  max-width: 320px;
+  padding: 18px;
+  color: var(--white);
+  background: rgba(6, 71, 55, 0.94);
+  border-radius: 8px;
+}
+
+.assessment-card strong {
+  font-size: 18px;
+}
+
+.assessment-card small {
+  color: rgba(255, 255, 255, 0.86);
 }
 
 .eyebrow,
@@ -179,10 +214,10 @@ p {
 }
 
 h1 {
-  max-width: 720px;
+  max-width: 820px;
   margin-bottom: 22px;
-  font-size: clamp(42px, 6.5vw, 86px);
-  line-height: 1.08;
+  font-size: clamp(34px, 5.4vw, 70px);
+  line-height: 1.14;
   letter-spacing: 0;
 }
 
@@ -200,7 +235,7 @@ h3 {
 }
 
 .lead {
-  max-width: 690px;
+  max-width: 760px;
   margin-bottom: 28px;
   color: #35433c;
   font-size: clamp(18px, 2.2vw, 24px);
@@ -228,7 +263,7 @@ h3 {
   justify-content: center;
   padding: 12px 20px;
   border: 1px solid transparent;
-  border-radius: 8px;
+  border-radius: 6px;
   cursor: pointer;
   font-weight: 800;
 }
@@ -236,7 +271,7 @@ h3 {
 .button-primary {
   color: var(--white);
   background: var(--green-dark);
-  box-shadow: 0 12px 24px rgba(15, 79, 69, 0.22);
+  box-shadow: 0 12px 24px rgba(6, 71, 55, 0.22);
 }
 
 .button-primary:hover {
@@ -244,7 +279,7 @@ h3 {
 }
 
 .button-secondary {
-  color: var(--green-dark);
+  color: var(--navy);
   background: rgba(255, 255, 255, 0.82);
   border-color: var(--line);
 }
@@ -285,7 +320,7 @@ h3 {
 .relationship,
 .solution,
 .contact {
-  padding: clamp(64px, 9vw, 118px) clamp(20px, 4vw, 56px);
+  padding: clamp(76px, 10vw, 132px) clamp(20px, 4vw, 56px);
 }
 
 .section-inner {
@@ -320,6 +355,40 @@ h3 {
   background: var(--white);
 }
 
+.concerns {
+  background: var(--cream);
+}
+
+.concern-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.concern-grid article {
+  position: relative;
+  padding: 22px 22px 22px 50px;
+  border: 1px solid #eadfce;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.86);
+  font-weight: 800;
+}
+
+.concern-grid article::before {
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  display: grid;
+  width: 20px;
+  height: 20px;
+  place-items: center;
+  color: var(--white);
+  background: var(--green);
+  border-radius: 50%;
+  content: "✓";
+  font-size: 12px;
+}
+
 .service-map {
   display: grid;
   gap: 14px;
@@ -329,7 +398,8 @@ h3 {
 .issue-grid article,
 .service-list article,
 .plan-grid article,
-.steps article {
+.steps article,
+.flow-grid article {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--white);
@@ -372,7 +442,7 @@ h3 {
 
 .solution {
   color: var(--white);
-  background: #143c36;
+  background: var(--navy);
 }
 
 .solution-panel {
@@ -413,7 +483,130 @@ h3 {
 }
 
 .service-list article {
+  overflow: hidden;
+  padding: 0 0 24px;
+}
+
+.service-list article h3,
+.service-list article p {
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.service-photo {
+  height: 170px;
+  margin: 0 0 22px;
+  background: var(--soft) center / cover;
+}
+
+.service-photo-1 {
+  background-image: url("https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=78");
+}
+
+.service-photo-2 {
+  background-image: url("https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=800&q=78");
+}
+
+.service-photo-3 {
+  background-image: url("https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=800&q=78");
+}
+
+.service-photo-4 {
+  background-image: url("https://images.unsplash.com/photo-1571019613914-85f342c6a11e?auto=format&fit=crop&w=800&q=78");
+}
+
+.service-photo-5 {
+  background-image: url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=78");
+}
+
+.service-photo-6 {
+  background-image: url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=78");
+}
+
+.representative {
+  background: var(--white);
+}
+
+.representative-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1.22fr);
+  gap: clamp(30px, 5vw, 70px);
+  align-items: center;
+}
+
+.representative-photo {
+  min-height: 520px;
+  overflow: hidden;
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(11, 32, 56, 0.02), rgba(11, 32, 56, 0.5)),
+    url("./narita-satoshi.jpg") 58% 38% / cover;
+  box-shadow: var(--shadow);
+}
+
+.photo-placeholder {
+  display: grid;
+  height: 100%;
+  min-height: 520px;
+  align-content: end;
+  gap: 4px;
+  padding: 26px;
+  color: var(--white);
+}
+
+.photo-placeholder span {
+  width: fit-content;
+  padding: 4px 10px;
+  background: var(--green);
+  border-radius: 999px;
+  font-weight: 800;
+}
+
+.photo-placeholder strong {
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.representative-copy p {
+  color: var(--muted);
+}
+
+.staff-card {
+  margin-top: 22px;
+  padding: 22px;
+  border-left: 5px solid var(--green);
+  border-radius: 8px;
+  background: var(--soft);
+}
+
+.staff-card h3 {
+  color: var(--navy);
+}
+
+.flow {
+  background: var(--soft);
+}
+
+.flow-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.flow-grid article {
   padding: 24px;
+}
+
+.flow-grid span {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  margin-bottom: 16px;
+  color: var(--white);
+  background: var(--navy);
+  border-radius: 50%;
+  font-weight: 900;
 }
 
 .audience {
@@ -497,6 +690,49 @@ h3 {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.risk-overview {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.risk-overview article {
+  display: grid;
+  gap: 8px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.risk-overview strong {
+  color: var(--navy);
+  font-size: 18px;
+}
+
+.risk-overview span {
+  color: var(--muted);
+}
+
+.risk-details {
+  display: grid;
+  gap: 18px;
+}
+
+.risk-details summary {
+  width: fit-content;
+  list-style: none;
+}
+
+.risk-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.risk-details[open] summary {
+  margin-bottom: 18px;
 }
 
 .risk-form {
@@ -677,7 +913,34 @@ h3 {
 }
 
 .plan-grid article {
+  position: relative;
   padding: 24px;
+}
+
+.recommended-plan {
+  border-color: rgba(18, 107, 80, 0.42) !important;
+  box-shadow: 0 18px 44px rgba(18, 107, 80, 0.14);
+}
+
+.recommended-plan::before {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  padding: 5px 9px;
+  color: var(--white);
+  background: var(--green);
+  border-radius: 999px;
+  content: "おすすめ";
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.plan-price {
+  display: block;
+  margin: 8px 0 14px;
+  color: var(--navy);
+  font-size: 22px;
+  line-height: 1.25;
 }
 
 .contact {
@@ -707,6 +970,10 @@ h3 {
   background: var(--white);
   border-radius: 8px;
   box-shadow: var(--shadow);
+}
+
+.contact-form label {
+  min-width: 0;
 }
 
 .contact-form label {
@@ -761,20 +1028,29 @@ h3 {
   .hero {
     min-height: auto;
     grid-template-columns: 1fr;
-    background:
-      linear-gradient(180deg, rgba(251, 250, 246, 0.96), rgba(251, 250, 246, 0.82)),
-      url("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=82") center / cover;
+  }
+
+  .hero-visual {
+    padding: 0 20px 56px;
+  }
+
+  .workplace-photo {
+    min-height: 360px;
   }
 
   .two-column,
   .contact-inner,
-  .risk-intro {
+  .risk-intro,
+  .representative-layout {
     grid-template-columns: 1fr;
   }
 
   .issue-grid,
   .service-list,
-  .plan-grid {
+  .concern-grid,
+  .risk-overview,
+  .plan-grid,
+  .flow-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -808,11 +1084,11 @@ h3 {
   }
 
   .hero-content {
-    padding: 48px 20px 72px;
+    padding: 48px 20px 32px;
   }
 
   h1 {
-    font-size: clamp(38px, 13vw, 54px);
+    font-size: clamp(34px, 11vw, 50px);
   }
 
   h2 {
@@ -822,10 +1098,26 @@ h3 {
   .hero-points,
   .issue-grid,
   .service-list,
+  .concern-grid,
   .benefit-grid,
   .risk-scale,
-  .plan-grid {
+  .risk-overview,
+  .plan-grid,
+  .flow-grid {
     grid-template-columns: 1fr;
+  }
+
+  .workplace-photo,
+  .representative-photo,
+  .photo-placeholder {
+    min-height: 320px;
+  }
+
+  .assessment-card {
+    right: 14px;
+    bottom: 14px;
+    left: 14px;
+    max-width: none;
   }
 
   .risk-question {
@@ -837,6 +1129,11 @@ h3 {
   }
 
   .button {
+    width: 100%;
+  }
+
+  .risk-details summary,
+  .risk-cta .button {
     width: 100%;
   }
 

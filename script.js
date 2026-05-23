@@ -4,6 +4,8 @@ const header = document.querySelector("[data-header]");
 const contactForm = document.querySelector("[data-contact-form]");
 const riskForm = document.querySelector("[data-risk-form]");
 const riskResult = document.querySelector("[data-risk-result]");
+const riskDetails = document.querySelector("#risk-details");
+const riskOpenButtons = document.querySelectorAll("[data-open-risk-check]");
 
 navToggle?.addEventListener("click", () => {
   const isOpen = nav?.classList.toggle("is-open");
@@ -21,18 +23,34 @@ window.addEventListener("scroll", () => {
   header?.classList.toggle("is-scrolled", window.scrollY > 12);
 });
 
+riskOpenButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    if (riskDetails) {
+      riskDetails.open = true;
+    }
+  });
+});
+
 contactForm?.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const formData = new FormData(contactForm);
   const company = formData.get("company") || "未入力";
   const name = formData.get("name") || "未入力";
+  const email = formData.get("email") || "未入力";
+  const phone = formData.get("phone") || "未入力";
+  const industry = formData.get("industry") || "未入力";
+  const employees = formData.get("employees") || "未入力";
   const message = formData.get("message") || "";
   const body = [
     "プライズネス健康経営サポートについて相談したいです。",
     "",
     `会社名: ${company}`,
     `お名前: ${name}`,
+    `メールアドレス: ${email}`,
+    `電話番号: ${phone}`,
+    `業種: ${industry}`,
+    `従業員数: ${employees}`,
     "",
     "ご相談内容:",
     String(message),
