@@ -366,6 +366,121 @@ h3 {
   max-width: 980px;
 }
 
+.article-hero {
+  padding: clamp(72px, 11vw, 134px) clamp(20px, 4vw, 56px) clamp(42px, 7vw, 80px);
+  background:
+    linear-gradient(120deg, rgba(247, 241, 231, 0.94), rgba(238, 246, 242, 0.94)),
+    var(--paper);
+}
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.article-layout {
+  padding: clamp(48px, 8vw, 92px) 0;
+}
+
+.article-content {
+  display: grid;
+  gap: 34px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.article-content h2 {
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.article-content p,
+.article-content li {
+  color: #35433c;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.article-main-image {
+  overflow: hidden;
+  margin: 0;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.article-main-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.article-data-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 22px 0;
+}
+
+.article-data-grid article {
+  display: grid;
+  gap: 8px;
+  padding: 22px;
+}
+
+.article-number-list {
+  display: grid;
+  gap: 10px;
+  padding: 20px 24px 20px 46px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--soft);
+}
+
+.article-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.faq-section {
+  display: grid;
+  gap: 12px;
+}
+
+.faq-section details {
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.faq-section summary {
+  cursor: pointer;
+  color: var(--navy);
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.faq-section p {
+  margin: 14px 0 0;
+}
+
+.source-note {
+  padding: 16px;
+  border-left: 5px solid var(--green);
+  border-radius: 8px;
+  background: var(--soft);
+}
+
 .section-inner {
   width: min(1120px, 100%);
   margin: 0 auto;
@@ -410,6 +525,89 @@ h3 {
 
 .concerns {
   background: var(--cream);
+}
+
+.data-insight {
+  background: var(--white);
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.stat-grid article,
+.news-card,
+.article-data-grid article {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 16px 42px rgba(10, 32, 56, 0.08);
+}
+
+.stat-grid article {
+  display: grid;
+  gap: 8px;
+  padding: 24px;
+}
+
+.stat-grid span,
+.article-data-grid span {
+  color: var(--green);
+  font-weight: 900;
+}
+
+.stat-grid strong,
+.article-data-grid strong {
+  color: var(--navy);
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.1;
+}
+
+.stat-grid p,
+.article-data-grid p,
+.data-copy p {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.data-copy {
+  display: grid;
+  gap: 12px;
+  max-width: 960px;
+}
+
+.news-section {
+  background: var(--soft);
+}
+
+.news-card {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 22px;
+  padding: clamp(22px, 4vw, 34px);
+}
+
+.news-card time {
+  color: var(--green);
+  font-weight: 900;
+}
+
+.news-card p {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.news-card a,
+.source-note a {
+  color: var(--green-dark);
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .concern-grid {
@@ -1250,6 +1448,8 @@ h3 {
   .issue-grid,
   .service-list,
   .concern-grid,
+  .stat-grid,
+  .article-data-grid,
   .risk-overview,
   .plan-grid,
   .flow-grid,
@@ -1303,6 +1503,8 @@ h3 {
   .service-list,
   .concern-grid,
   .benefit-grid,
+  .stat-grid,
+  .article-data-grid,
   .risk-scale,
   .risk-overview,
   .plan-grid,
@@ -1318,6 +1520,20 @@ h3 {
 
   .cta-actions {
     justify-content: stretch;
+  }
+
+  .news-card {
+    grid-template-columns: 1fr;
+  }
+
+  .article-content p,
+  .article-content li {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .article-cta {
+    padding: 16px;
   }
 
   .workplace-photo,
