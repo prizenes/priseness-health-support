@@ -67,15 +67,23 @@ textarea {
 }
 
 .brand-mark {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
+  display: inline-flex;
+  width: 46px;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
   flex: 0 0 auto;
-  color: var(--white);
-  background: var(--navy);
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid rgba(216, 226, 223, 0.85);
   border-radius: 8px;
-  font-weight: 800;
+}
+
+.brand-mark img {
+  display: block;
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
 }
 
 .brand-name,
