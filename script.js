@@ -271,7 +271,7 @@ riskForm?.addEventListener("submit", (event) => {
     <div class="risk-cta">
       <strong>職場の健康リスクが気になる企業様へ</strong>
       <p>プライズネス健康経営サポートでは、理学療法士が職場を訪問し、従業員の身体機能・作業動作・職場環境を確認します。腰痛・転倒・ケガの予防に向けて、現場に合わせた改善提案を行います。</p>
-      <a class="button button-primary" href="/#contact">無料相談はこちら</a>
+      <a class="button button-primary" href="/contact">無料相談はこちら</a>
     </div>
   `;
 });

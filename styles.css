@@ -1275,7 +1275,7 @@ h3 {
 
 .subsidy-card {
   display: grid;
-  gap: 16px;
+  gap: 22px;
   padding: clamp(26px, 5vw, 48px);
   border: 1px solid #d9e5d9;
   border-radius: 8px;
@@ -1291,6 +1291,140 @@ h3 {
   color: var(--muted);
   font-size: 17px;
   line-height: 1.8;
+}
+
+.subsidy-body {
+  display: grid;
+  gap: 12px;
+}
+
+.subsidy-point-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.subsidy-point-grid article {
+  display: grid;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.subsidy-point-grid h3,
+.doc-card h4 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 20px;
+}
+
+.subsidy-icon {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  color: var(--white);
+  background: var(--green-dark);
+  border-radius: 8px;
+  font-weight: 900;
+}
+
+.subsidy-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+}
+
+.subsidy-summary div {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--soft);
+}
+
+.subsidy-summary dt {
+  color: var(--green-dark);
+  font-weight: 900;
+}
+
+.subsidy-summary dd {
+  margin: 4px 0 0;
+  color: var(--navy);
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.official-docs {
+  display: grid;
+  gap: 18px;
+  padding: clamp(20px, 4vw, 30px);
+  border: 1px solid #d9e5d9;
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.doc-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.doc-card {
+  display: grid;
+  grid-template-columns: 132px minmax(0, 1fr);
+  gap: 16px;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfdfb;
+}
+
+.doc-card img,
+.doc-placeholder {
+  width: 132px;
+  aspect-ratio: 1 / 1.34;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--soft);
+}
+
+.doc-card img {
+  display: block;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.doc-placeholder {
+  display: grid;
+  place-items: center;
+  color: var(--green-dark);
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.doc-card div {
+  display: grid;
+  gap: 12px;
+}
+
+.subsidy-notes {
+  display: grid;
+  gap: 4px;
+  padding: 14px 16px;
+  border-left: 5px solid var(--green);
+  border-radius: 8px;
+  background: rgba(238, 246, 242, 0.82);
+}
+
+.subsidy-notes p {
+  margin: 0;
+  color: #66746d;
+  font-size: 15px;
+  line-height: 1.7;
 }
 
 .subsidy-card .small-note,
@@ -1456,6 +1590,11 @@ h3 {
   .info-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .subsidy-point-grid,
+  .doc-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 720px) {
@@ -1511,6 +1650,21 @@ h3 {
   .flow-grid,
   .info-grid {
     grid-template-columns: 1fr;
+  }
+
+  .subsidy-point-grid,
+  .subsidy-summary,
+  .doc-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .doc-card {
+    grid-template-columns: 96px minmax(0, 1fr);
+  }
+
+  .doc-card img,
+  .doc-placeholder {
+    width: 96px;
   }
 
   .section-heading-with-action {
