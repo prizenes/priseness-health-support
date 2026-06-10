@@ -177,6 +177,29 @@ nav.gnav a:hover{color:var(--green)}
   html{scroll-behavior:auto}
 }
 
+/* ---------- check induce ---------- */
+.check-induce{padding:56px 0;background:var(--navy-soft)}
+.check-induce .ci-card{
+  background:#fff;border:1.5px solid #CDE8DC;border-radius:20px;box-shadow:var(--shadow);
+  padding:40px 42px;display:grid;grid-template-columns:1.25fr .75fr;gap:36px;align-items:center;
+}
+.ci-badge{display:inline-block;background:var(--green-soft);color:var(--green);font-size:12.5px;font-weight:700;
+  border-radius:6px;padding:4px 12px;margin-bottom:12px;letter-spacing:.04em}
+.ci-card h2{font-size:clamp(21px,2.8vw,27px);font-weight:900;margin-bottom:12px}
+.ci-card p{font-size:14.5px;color:var(--muted)}
+.ci-points{list-style:none;margin-top:14px}
+.ci-points li{position:relative;padding-left:22px;font-size:13.5px;margin-bottom:6px;color:var(--ink)}
+.ci-points li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:700}
+.ci-action{text-align:center}
+.btn-check{
+  background:#fff;color:var(--green);border-color:var(--green);width:100%;font-size:15.5px;
+}
+.btn-check:hover{background:var(--green);color:#fff}
+.ci-sub{display:block;margin-top:12px;font-size:12.5px;color:var(--muted)}
+@media(max-width:880px){
+  .check-induce .ci-card{grid-template-columns:1fr;padding:30px 24px;gap:22px}
+}
+
 /* ---------- problems ---------- */
 .problems{background:var(--navy-soft)}
 .prob-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
@@ -269,14 +292,18 @@ nav.gnav a:hover{color:var(--green)}
 .svc-deliv::before{content:"納品物・成果 ▸ ";color:var(--green)}
 .flow{margin-top:54px;background:#fff;border-radius:var(--radius);padding:34px 32px;box-shadow:var(--shadow)}
 .flow h3{font-size:18px;font-weight:900;margin-bottom:24px;text-align:center}
-.flow-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.flow-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
 .flow-step{text-align:center;position:relative;padding:0 8px}
 .flow-step:not(:last-child)::after{content:"›";position:absolute;right:-8px;top:14px;color:var(--green);font-size:24px;font-weight:700}
 .flow-num{width:46px;height:46px;border-radius:50%;background:var(--navy);color:#fff;font-family:"Zen Kaku Gothic New",sans-serif;
   font-weight:900;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-size:17px}
 .flow-step b{display:block;font-size:14.5px;color:var(--navy);margin-bottom:4px}
 .flow-step span{font-size:12.5px;color:var(--muted);line-height:1.6;display:block}
-@media(max-width:880px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:880px){
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .flow-steps{grid-template-columns:1fr 1fr;gap:20px}
+  .flow-step:not(:last-child)::after{display:none}
+}
 @media(max-width:620px){
   .svc-grid{grid-template-columns:1fr}
   .flow-steps{grid-template-columns:1fr 1fr;gap:20px}
@@ -364,6 +391,39 @@ details[open] summary::after{content:"−"}
 .faq-a::before{content:"A";flex:none;width:28px;height:28px;border-radius:8px;background:var(--green-soft);color:var(--green);
   display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;font-family:"Zen Kaku Gothic New",sans-serif}
 
+/* ---------- mini check CTA ---------- */
+.mini-check{
+  margin-top:44px;text-align:center;background:var(--green-soft);
+  border:1.5px dashed #BFE3D2;border-radius:16px;padding:28px 24px;
+}
+.mini-check p{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:16px;line-height:1.8}
+.sp-br{display:none}
+@media(max-width:620px){.sp-br{display:inline}}
+
+/* ---------- pre-final check ---------- */
+.pre-final{background:var(--navy-soft);border-top:1px solid var(--line);padding:26px 0}
+.pre-final-in{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.pre-final b{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;color:var(--navy);font-size:16.5px;margin-bottom:2px}
+.pre-final span{font-size:13px;color:var(--muted)}
+.pre-final .btn{flex:none;background:#fff}
+@media(max-width:760px){
+  .pre-final-in{flex-direction:column;align-items:stretch;text-align:center}
+  .pre-final .btn{width:100%}
+}
+
+/* ---------- knows ---------- */
+.knows{background:var(--green-soft)}
+.know-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.know-card{background:#fff;border-radius:var(--radius);padding:30px 28px;box-shadow:var(--shadow);position:relative}
+.know-num{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:15px;color:var(--green);
+  letter-spacing:.12em;margin-bottom:10px}
+.know-card h3{font-size:17.5px;font-weight:900;margin-bottom:10px}
+.know-card p{font-size:14px;color:var(--muted)}
+.know-card p strong{color:var(--navy)}
+.know-cta{margin-top:34px;text-align:center}
+.know-cta span{display:block;margin-top:14px;font-size:13px;color:var(--muted)}
+@media(max-width:880px){.know-grid{grid-template-columns:1fr}}
+
 /* ---------- final CTA ---------- */
 .final{background:var(--navy);color:#fff;text-align:center}
 .final .sec-title{color:#fff;font-size:clamp(24px,3.4vw,34px)}
@@ -393,7 +453,7 @@ footer a:hover{color:#3DD68C}
   padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px;
   box-shadow:0 -6px 24px rgba(11,37,69,.12);
 }
-.sticky-cta a{flex:1;text-align:center;font-weight:700;font-size:14px;border-radius:10px;padding:14px 6px}
+.sticky-cta a{flex:1;text-align:center;font-weight:700;font-size:13.5px;border-radius:10px;padding:16px 4px;line-height:1.3;display:flex;align-items:center;justify-content:center}
 .sticky-cta .s-primary{background:var(--green);color:#fff}
 .sticky-cta .s-secondary{background:var(--navy-soft);color:var(--navy);border:1.5px solid var(--navy)}
 @media(max-width:880px){.sticky-cta{display:flex}}
@@ -426,17 +486,17 @@ footer a:hover{color:#3DD68C}
 <div class="hero" id="top">
   <div class="wrap">
     <div>
-      <span class="hero-badge">札幌・北海道の企業向け｜訪問対応</span>
-      <h1>従業員の<span class="hl">腰痛・転倒・休職リスク</span>を、<br>理学療法士が職場単位で<span class="hl">見える化</span>。</h1>
-      <p class="lead">「誰が・どの作業で・どんなリスクを抱えているか」を専門家が評価し、労災・休職を未然に防ぐ職場づくりへ。介護・製造・運送・建設・オフィスまで、現場に合わせてご提案します。</p>
+      <span class="hero-badge">札幌・北海道｜60歳以上の従業員がいる企業さまへ</span>
+      <h1><span class="hl">60歳以上の従業員</span>がいる会社の<br>腰痛・転倒・休職・労災リスクを、<br>理学療法士が<span class="hl">見える化</span>。</h1>
+      <p class="lead">「ベテランが1人休むと、現場が止まる」——そうなる前に。誰が・どの作業で・どんなリスクを抱えているかを国家資格者が評価します。60歳以上の従業員が1名以上いる中小企業は、<strong style="color:#3DD68C">エイジフレンドリー補助金（上限100万円）</strong>の対象になる可能性があります。</p>
       <div class="hero-ctas">
-        <a class="btn btn-primary" href="/contact">無料相談を申し込む <span class="arw">→</span></a>
-        <a class="btn btn-ghost-light" href="/check">まず3分でリスクチェック</a>
+        <a class="btn btn-primary" href="/contact">自社が対象になるか無料相談する <span class="arw">→</span></a>
+        <a class="btn btn-ghost-light" href="/workplace-low-back-pain-check#low-back-check">3分で職場リスクチェック</a>
       </div>
       <div class="hero-trust">
         <span>✓ 理学療法士（国家資格）が直接対応</span>
-        <span>✓ エイジフレンドリー補助金の活用相談OK</span>
-        <span>✓ 相談・お見積りは無料</span>
+        <span>✓ 60歳以上の従業員1名から補助金対象の可能性</span>
+        <span>✓ 相談・お見積り無料／契約は迫りません</span>
       </div>
     </div>
     <div class="report-card" aria-hidden="true">
@@ -474,8 +534,30 @@ footer a:hover{color:#3DD68C}
       <div class="prob-card">安全衛生委員会で報告できる「形になる対策」がほしい</div>
     </div>
     <div class="prob-cta">
-      <p>「うちの場合はどう?」も含めて、まず無料でご相談ください。</p>
-      <a class="btn btn-primary" href="/contact">無料相談で課題を整理する <span class="arw">→</span></a>
+      <p>1つでも当てはまったら、放置せず「現状の把握」から始めましょう。</p>
+      <a class="btn btn-primary" href="/contact">自社が対象になるか無料相談する <span class="arw">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LOW BACK CHECK INDUCE ================= -->
+<section class="check-induce">
+  <div class="wrap">
+    <div class="ci-card">
+      <div class="ci-text">
+        <span class="ci-badge">無料・登録不要・約3分</span>
+        <h2>あなたの職場は大丈夫ですか？</h2>
+        <p>腰痛や転倒は、ある日突然起きるように見えて、実は<strong>突然は起きません</strong>。重い物の持ち方、前かがみの作業環境、長時間同じ姿勢、加齢による筋力・バランス機能の低下——<strong>複数の要因が静かに積み重なって</strong>、ある日「休業」という形で表面化します。</p>
+        <ul class="ci-points">
+          <li>30項目・約3分のチェックで、職場に潜むリスクを見える化できます</li>
+          <li>結果はその場で表示。個人情報の入力は不要です</li>
+          <li>結果を安全衛生委員会の話題づくりに。気になったらそのまま無料相談へ</li>
+        </ul>
+      </div>
+      <div class="ci-action">
+        <a class="btn btn-check" href="/workplace-low-back-pain-check#low-back-check">無料｜3分で職場リスクチェック <span class="arw">→</span></a>
+        <span class="ci-sub">いきなりの相談はハードルが高い…という方はまずこちら</span>
+      </div>
     </div>
   </div>
 </section>
@@ -490,7 +572,7 @@ footer a:hover{color:#3DD68C}
     <div class="tabs" role="tablist" aria-label="業種を選択">
       <button class="tab-btn" role="tab" aria-selected="true" data-tab="kaigo">介護・福祉</button>
       <button class="tab-btn" role="tab" aria-selected="false" data-tab="seizo">製造業</button>
-      <button class="tab-btn" role="tab" aria-selected="false" data-tab="unso">運送業</button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="unso">運送・倉庫業</button>
       <button class="tab-btn" role="tab" aria-selected="false" data-tab="kensetsu">建設・現場作業</button>
       <button class="tab-btn" role="tab" aria-selected="false" data-tab="office">事務・デスクワーク</button>
     </div>
@@ -537,11 +619,11 @@ footer a:hover{color:#3DD68C}
 
     <div class="tab-panel" id="panel-unso" role="tabpanel">
       <div class="ind-card issue">
-        <h3><span class="tag tag-issue">よくある課題</span>運送業</h3>
+        <h3><span class="tag tag-issue">よくある課題</span>運送・倉庫業</h3>
         <ul>
           <li>荷役作業での腰痛、荷台からの転落・飛び降りによるケガ</li>
-          <li>長時間運転による腰・肩の慢性的な不調</li>
-          <li>ドライバー不足で1人の休業が配送計画に直結する</li>
+          <li>倉庫内のピッキング・台車作業・反復した持ち上げで足腰の負担が大きい</li>
+          <li>長時間運転による腰・肩の慢性的な不調、ドライバー不足で1人の休業が配送計画に直結</li>
         </ul>
       </div>
       <div class="ind-card sol">
@@ -593,6 +675,10 @@ footer a:hover{color:#3DD68C}
         </ul>
       </div>
       <div class="ind-foot"><a class="btn btn-outline btn-sm" href="/contact">オフィスの健康経営を相談する</a></div>
+    </div>
+    <div class="mini-check">
+      <p>自社の業種に当てはまる課題、ありましたか?<br class="sp-br">まずは3分で、職場のリスクを数値で確かめられます。</p>
+      <a class="btn btn-check btn-sm" href="/workplace-low-back-pain-check#low-back-check">無料｜3分で職場リスクチェック <span class="arw">→</span></a>
     </div>
   </div>
 </section>
@@ -720,27 +806,32 @@ footer a:hover{color:#3DD68C}
     </div>
 
     <div class="flow">
-      <h3>導入までの流れ — 最短2週間で現場評価まで</h3>
+      <h3>訪問評価の流れ — 5ステップ・最短2週間で現場評価まで</h3>
       <div class="flow-steps">
         <div class="flow-step">
           <div class="flow-num">1</div>
           <b>無料相談</b>
-          <span>オンライン・電話・訪問で課題をヒアリング（30〜60分）</span>
+          <span>オンライン・電話・訪問で課題と補助金の対象可能性を整理（30〜60分）</span>
         </div>
         <div class="flow-step">
           <div class="flow-num">2</div>
           <b>ご提案・お見積り</b>
-          <span>課題と予算に合わせたプランを提示。補助金活用も検討</span>
+          <span>課題と予算に合わせたプランと費用を提示</span>
         </div>
         <div class="flow-step">
           <div class="flow-num">3</div>
-          <b>訪問評価・実施</b>
-          <span>現場で評価・チェック・セミナーを実施</span>
+          <b>現場での評価</b>
+          <span>作業動作・姿勢・職場環境を理学療法士が直接確認</span>
         </div>
         <div class="flow-step">
           <div class="flow-num">4</div>
+          <b>身体機能チェック</b>
+          <span>筋力・バランス・歩行などを測定し、個人別に結果を整理</span>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">5</div>
           <b>報告・改善へ</b>
-          <span>レポート納品。継続支援で定着までフォロー</span>
+          <span>見える化レポートを納品。継続支援で定着までフォロー</span>
         </div>
       </div>
     </div>
@@ -765,7 +856,7 @@ footer a:hover{color:#3DD68C}
           <li>実技中心で「明日から使える」内容</li>
           <li>配布資料・体操メニュー付き</li>
         </ul>
-        <div class="plan-fit"><b>こんな会社に</b>まず1回試したい／安全大会・社内研修の枠で実施したい</div>
+        <div class="plan-fit"><b>こんな会社におすすめ</b>外部の専門家を入れるのが初めての会社／安全大会・衛生委員会の枠でまず1回試したい会社</div>
         <a class="btn btn-outline" href="/contact">セミナーを相談する</a>
       </div>
 
@@ -780,7 +871,7 @@ footer a:hover{color:#3DD68C}
           <li>見える化レポート＋改善提案を納品</li>
           <li>エイジフレンドリー補助金の取組整理にも対応</li>
         </ul>
-        <div class="plan-fit"><b>こんな会社に</b>腰痛・転倒の課題を本格的に把握したい／補助金活用を視野に入れたい</div>
+        <div class="plan-fit"><b>こんな会社におすすめ</b>60歳以上の従業員がいて補助金活用を視野に入れたい会社／腰痛・転倒の実態をデータで把握したい会社</div>
         <a class="btn btn-primary" href="/contact">訪問評価を相談する</a>
       </div>
 
@@ -794,7 +885,7 @@ footer a:hover{color:#3DD68C}
           <li>取組の効果測定と定期レポート</li>
           <li>健康経営・安全衛生活動の年間計画を伴走支援</li>
         </ul>
-        <div class="plan-fit"><b>こんな会社に</b>健康経営優良法人を目指したい／対策を一過性で終わらせたくない</div>
+        <div class="plan-fit"><b>こんな会社におすすめ</b>健康経営優良法人の認定を目指す会社／休職・離職を本気で減らしたい、対策を一過性で終わらせたくない会社</div>
         <a class="btn btn-outline" href="/contact">継続支援を相談する</a>
       </div>
     </div>
@@ -818,7 +909,7 @@ footer a:hover{color:#3DD68C}
         </ul>
         <div class="sub-cta">
           <p>すべて当てはまりそうなら、対象になる可能性があります。<br>「うちは対象?」の段階から、無料でご相談いただけます。</p>
-          <a class="btn btn-primary" style="width:100%" href="/contact">補助金活用について無料相談する <span class="arw">→</span></a>
+          <a class="btn btn-primary" style="width:100%" href="/contact">自社が対象になるか無料相談する <span class="arw">→</span></a>
         </div>
       </div>
       <div>
@@ -893,6 +984,47 @@ footer a:hover{color:#3DD68C}
   </div>
 </section>
 
+<!-- ================= WHAT YOU GET ================= -->
+<section class="knows">
+  <div class="wrap">
+    <span class="eyebrow">無料相談で何がわかる?</span>
+    <h2 class="sec-title">30〜60分の無料相談で、この3つが持ち帰れます。</h2>
+    <p class="sec-lead">「とりあえず話を聞くだけ」で構いません。相談の場で売り込みはせず、御社が次に何をすべきかが分かる状態でお返しします。</p>
+    <div class="know-grid">
+      <div class="know-card">
+        <div class="know-num">01</div>
+        <h3>自社の優先リスク</h3>
+        <p>腰痛・転倒・休職・労災のうち、御社の業種と従業員構成で<strong>最初に手を付けるべきリスク</strong>がどれかを整理します。</p>
+      </div>
+      <div class="know-card">
+        <div class="know-num">02</div>
+        <h3>補助金の対象になりそうか</h3>
+        <p>60歳以上の従業員数・事業年数などをお聞きし、<strong>エイジフレンドリー補助金の対象になりそうか</strong>の見立てをお伝えします（採択を保証するものではありません）。</p>
+      </div>
+      <div class="know-card">
+        <div class="know-num">03</div>
+        <h3>費用感と現実的な始め方</h3>
+        <p>予算と現場の状況に合わせ、<strong>セミナー1回から始めるか、訪問評価から入るか</strong>、無理のない導入プランと概算費用を提示します。</p>
+      </div>
+    </div>
+    <div class="know-cta">
+      <a class="btn btn-primary" href="/contact">自社が対象になるか無料相談する <span class="arw">→</span></a>
+      <span>相談したからといって、契約の義務は一切ありません。</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRE-FINAL CHECK ================= -->
+<div class="pre-final">
+  <div class="wrap pre-final-in">
+    <div>
+      <b>相談前に、まずチェックしたい方へ</b>
+      <span>30項目・約3分。結果はその場で表示され、個人情報の入力は不要です。</span>
+    </div>
+    <a class="btn btn-check btn-sm" href="/workplace-low-back-pain-check#low-back-check">無料｜3分で職場リスクチェック <span class="arw">→</span></a>
+  </div>
+</div>
+
 <!-- ================= FINAL CTA ================= -->
 <section class="final" id="contact">
   <div class="wrap">
@@ -900,12 +1032,13 @@ footer a:hover{color:#3DD68C}
     <h2 class="sec-title">休職者が出てからでは、遅い。<br>まず「何から始めるべきか」の整理から。</h2>
     <p class="lead">企業規模・職種・予算に合わせて、導入しやすい形をご提案します。相談したからといって契約の義務はありません。札幌・北海道の企業さまからのご相談をお待ちしています。</p>
     <div class="final-ctas">
-      <a class="btn btn-primary" href="/contact">無料相談を申し込む <span class="arw">→</span></a>
-      <a class="btn btn-ghost-light" href="/check">3分チェックを試す</a>
+      <a class="btn btn-primary" href="/contact">自社が対象になるか無料相談する <span class="arw">→</span></a>
+      <a class="btn btn-ghost-light" href="/workplace-low-back-pain-check#low-back-check">まず3分で職場リスクチェック</a>
     </div>
     <div class="final-sub">
       <a href="/contact">補助金の対象になりそうか相談する</a>
       <a href="/contact">サービス資料を請求する</a>
+      <a href="/check">30項目の健康リスクチェックを試す</a>
     </div>
     <div class="final-tel">お急ぎの方はお電話で（平日 9:00〜18:00）<strong>011-600-6048</strong></div>
   </div>
@@ -942,8 +1075,8 @@ footer a:hover{color:#3DD68C}
 
 <!-- ================= MOBILE STICKY CTA ================= -->
 <div class="sticky-cta">
-  <a class="s-secondary" href="/check">3分チェック</a>
-  <a class="s-primary" href="/contact">無料相談する</a>
+  <a class="s-secondary" href="/workplace-low-back-pain-check#low-back-check">3分リスクチェック</a>
+  <a class="s-primary" href="/contact">対象になるか無料相談</a>
 </div>
 
 <script>
