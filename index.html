@@ -1,428 +1,963 @@
-﻿<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>札幌の企業向け健康経営サポート｜腰痛・転倒・労災予防｜プライズネス</title>
-    <meta
-      name="description"
-      content="札幌・北海道の企業向け健康経営サポート。理学療法士が職場を訪問し、腰痛・転倒・労災リスクの予防、職場改善、従業員の身体機能チェックを支援します。"
-    />
-    <meta property="og:title" content="札幌の企業向け健康経営サポート｜プライズネス" />
-    <meta
-      property="og:description"
-      content="札幌・北海道の企業向けに、理学療法士が腰痛・転倒・労災リスクの予防、職場改善、従業員の身体機能チェックを支援します。"
-    />
-    <meta property="og:type" content="website" />
-    <link rel="stylesheet" href="./styles.css" />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EWVE5W7WNE"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag("js", new Date());
-      gtag("config", "G-EWVE5W7WNE");
-    </script>  </head>
-  <body>
-    <header class="site-header" data-header>
-      <a class="brand" href="/" aria-label="プライズネス健康経営サポート トップへ">
-        <span class="brand-mark"><img src="./assets/prizenes-logo-mark.png" alt="プライズネス ロゴマーク" /></span>
-        <span>
-          <span class="brand-name">プライズネス</span>
-          <span class="brand-sub">健康経営サポート</span>
-        </span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="site-nav" id="site-nav" data-nav>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>札幌の企業向け健康経営サポート｜腰痛・転倒・労災予防を理学療法士が支援｜プライズネス</title>
+<meta name="description" content="札幌・北海道の中小企業向け健康経営サポート。理学療法士が職場を訪問し、従業員の腰痛・転倒・休職リスクを見える化。労災予防・高年齢労働者対策・エイジフレンドリー補助金の活用相談まで無料で対応します。">
+<meta property="og:title" content="札幌の企業向け健康経営サポート｜腰痛・転倒・労災予防｜プライズネス">
+<meta property="og:description" content="従業員の腰痛・転倒・休職リスクを、理学療法士が職場単位で見える化。札幌・北海道対応。無料相談受付中。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://priseness-health-support.vercel.app/">
+<link rel="canonical" href="https://priseness-health-support.vercel.app/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@700;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "プライズネス健康経営サポート",
+  "description": "札幌・北海道の企業向けに、理学療法士が腰痛・転倒・労災リスクの予防、身体機能チェック、職場改善、健康経営の取り組みを支援します。",
+  "url": "https://priseness-health-support.vercel.app/",
+  "telephone": "+81-11-600-6048",
+  "email": "mail@prizenes.com",
+  "address": {
+    "@type": "PostalAddress",
+    "postalCode": "063-0812",
+    "addressRegion": "北海道",
+    "addressLocality": "札幌市西区",
+    "streetAddress": "琴似2条3-1-1 チェストオオイビル3階"
+  },
+  "areaServed": ["札幌市", "北海道"],
+  "parentOrganization": { "@type": "Organization", "name": "株式会社プライズライフ" }
+}
+</script>
+<style>
+:root{
+  --navy:#0B2545;
+  --navy-deep:#071A33;
+  --navy-soft:#EEF4FA;
+  --green:#0C8A5B;
+  --green-deep:#0A6E49;
+  --green-soft:#EDF7F2;
+  --ink:#1C2B3A;
+  --muted:#5B6C7D;
+  --line:#DFE7EE;
+  --white:#FFFFFF;
+  --radius:14px;
+  --shadow:0 8px 28px rgba(11,37,69,.08);
+  --shadow-lg:0 16px 44px rgba(11,37,69,.14);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{
+  font-family:"Noto Sans JP",sans-serif;
+  color:var(--ink);
+  background:var(--white);
+  line-height:1.85;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+  padding-bottom:0;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:"Zen Kaku Gothic New","Noto Sans JP",sans-serif;line-height:1.45;color:var(--navy)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+section{padding:88px 0}
+@media(max-width:760px){section{padding:60px 0}}
+
+/* ---------- eyebrow / headings ---------- */
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;font-weight:700;letter-spacing:.14em;
+  color:var(--green);margin-bottom:14px;
+}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--green);display:inline-block}
+.sec-title{font-size:clamp(24px,3.4vw,34px);font-weight:900;margin-bottom:16px}
+.sec-lead{color:var(--muted);max-width:680px;font-size:15.5px}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-weight:700;border-radius:999px;cursor:pointer;
+  padding:16px 32px;font-size:16px;transition:.2s;border:2px solid transparent;
+  font-family:"Noto Sans JP",sans-serif;
+}
+.btn-primary{background:var(--green);color:#fff;box-shadow:0 6px 18px rgba(12,138,91,.35)}
+.btn-primary:hover{background:var(--green-deep);transform:translateY(-2px)}
+.btn-outline{background:#fff;color:var(--navy);border-color:var(--navy)}
+.btn-outline:hover{background:var(--navy);color:#fff}
+.btn-ghost-light{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.55)}
+.btn-ghost-light:hover{background:#fff;color:var(--navy)}
+.btn-sm{padding:11px 22px;font-size:14px}
+.btn .arw{font-size:18px;line-height:1}
+.btn:focus-visible{outline:3px solid #7FD6B4;outline-offset:2px}
+
+/* ---------- header ---------- */
+header{
+  position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+}
+.header-in{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-family:"Zen Kaku Gothic New",sans-serif;color:var(--navy);font-size:17px}
+.brand img{width:34px;height:34px;object-fit:contain}
+.brand small{display:block;font-size:11px;font-weight:500;color:var(--muted);line-height:1.2}
+nav.gnav{display:flex;gap:26px;font-size:14px;font-weight:500}
+nav.gnav a:hover{color:var(--green)}
+.header-cta{display:flex;align-items:center;gap:12px}
+.header-tel{text-align:right;line-height:1.3;font-size:12px;color:var(--muted)}
+.header-tel strong{display:block;font-size:17px;color:var(--navy);letter-spacing:.02em}
+@media(max-width:980px){nav.gnav{display:none}.header-tel{display:none}}
+
+/* ---------- hero ---------- */
+.hero{
+  background:
+    radial-gradient(900px 500px at 85% -10%, rgba(12,138,91,.16), transparent 60%),
+    linear-gradient(160deg, var(--navy) 0%, #0E3158 55%, #114070 100%);
+  color:#fff;padding:84px 0 96px;overflow:hidden;position:relative;
+}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.3);border-radius:999px;
+  padding:7px 16px;font-size:13px;font-weight:700;letter-spacing:.04em;margin-bottom:22px;
+}
+.hero-badge::before{content:"●";color:#3DD68C;font-size:9px}
+.hero h1{
+  color:#fff;font-size:clamp(27px,4vw,42px);font-weight:900;line-height:1.5;margin-bottom:20px;
+}
+.hero h1 .hl{
+  background:linear-gradient(transparent 62%, rgba(61,214,140,.45) 62%);
+  padding:0 2px;
+}
+.hero p.lead{color:rgba(255,255,255,.85);font-size:15.5px;max-width:540px;margin-bottom:30px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:30px}
+.hero-trust{display:flex;flex-wrap:wrap;gap:10px}
+.hero-trust span{
+  font-size:12.5px;font-weight:500;color:rgba(255,255,255,.85);
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);
+  border-radius:8px;padding:6px 12px;
+}
+/* signature: report mock */
+.report-card{
+  background:#fff;color:var(--ink);border-radius:18px;box-shadow:var(--shadow-lg);
+  padding:26px 26px 22px;max-width:400px;margin-left:auto;position:relative;
+}
+.report-card::after{
+  content:"理学療法士が評価";position:absolute;top:-14px;right:18px;
+  background:var(--green);color:#fff;font-size:12px;font-weight:700;
+  padding:6px 14px;border-radius:999px;box-shadow:0 4px 12px rgba(12,138,91,.4);
+}
+.report-head{font-size:13px;font-weight:700;color:var(--muted);letter-spacing:.08em;margin-bottom:4px}
+.report-title{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:19px;color:var(--navy);margin-bottom:18px}
+.risk-row{margin-bottom:14px}
+.risk-row .label{display:flex;justify-content:space-between;font-size:13px;font-weight:700;margin-bottom:5px}
+.risk-row .label em{font-style:normal}
+.bar{height:9px;background:#EAF0F5;border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:99px;transform-origin:left;animation:grow 1.1s cubic-bezier(.2,.7,.3,1) both}
+.bar i.high{width:78%;background:#E0735C;animation-delay:.2s}
+.bar i.mid{width:56%;background:#E8B64C;animation-delay:.35s}
+.bar i.low{width:30%;background:var(--green);animation-delay:.5s}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.report-note{
+  margin-top:16px;padding-top:14px;border-top:1px dashed var(--line);
+  font-size:12.5px;color:var(--muted);display:flex;gap:8px;align-items:flex-start;
+}
+.report-note b{color:var(--green);white-space:nowrap}
+@media(max-width:880px){
+  .hero{padding:56px 0 64px}
+  .hero .wrap{grid-template-columns:1fr;gap:38px}
+  .report-card{margin:0 auto}
+  .hero-ctas .btn{flex:1;min-width:230px}
+}
+@media(prefers-reduced-motion:reduce){
+  .bar i{animation:none}
+  .btn-primary:hover{transform:none}
+  html{scroll-behavior:auto}
+}
+
+/* ---------- problems ---------- */
+.problems{background:var(--navy-soft)}
+.prob-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
+.prob-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px 22px;font-weight:500;font-size:15px;display:flex;gap:12px;align-items:flex-start;
+}
+.prob-card::before{content:"✓";flex:none;width:24px;height:24px;border-radius:50%;
+  background:var(--green-soft);color:var(--green);font-weight:700;font-size:13px;
+  display:flex;align-items:center;justify-content:center;margin-top:2px}
+.prob-cta{margin-top:30px;text-align:center}
+.prob-cta p{font-weight:700;color:var(--navy);margin-bottom:16px;font-size:17px}
+@media(max-width:880px){.prob-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.prob-grid{grid-template-columns:1fr}}
+
+/* ---------- industry tabs ---------- */
+.tabs{display:flex;gap:8px;margin:36px 0 0;overflow-x:auto;padding-bottom:6px;-webkit-overflow-scrolling:touch}
+.tab-btn{
+  flex:none;border:1.5px solid var(--line);background:#fff;border-radius:999px;
+  padding:11px 22px;font-size:14px;font-weight:700;color:var(--muted);cursor:pointer;
+  font-family:"Noto Sans JP",sans-serif;transition:.18s;white-space:nowrap;
+}
+.tab-btn[aria-selected="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.tab-btn:focus-visible{outline:3px solid #7FD6B4;outline-offset:2px}
+.tab-panel{display:none;margin-top:22px}
+.tab-panel.active{display:grid;grid-template-columns:1fr 1fr;gap:18px;animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.ind-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+.ind-card h3{font-size:16px;font-weight:900;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.ind-card h3 .tag{font-size:11.5px;font-weight:700;border-radius:6px;padding:4px 10px;letter-spacing:.05em}
+.tag-issue{background:#FBEEEB;color:#B5503B}
+.tag-sol{background:var(--green-soft);color:var(--green)}
+.ind-card ul{list-style:none}
+.ind-card li{position:relative;padding-left:22px;font-size:14.5px;margin-bottom:10px;color:var(--ink)}
+.ind-card.issue li::before{content:"—";position:absolute;left:0;color:#C77;font-weight:700}
+.ind-card.sol li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:700}
+.ind-foot{grid-column:1/-1;text-align:center;margin-top:6px}
+@media(max-width:760px){.tab-panel.active{grid-template-columns:1fr}}
+
+/* ---------- stats ---------- */
+.stats{background:var(--navy-deep);color:#fff}
+.stats .sec-title{color:#fff}
+.stats .sec-lead{color:rgba(255,255,255,.75)}
+.stats .eyebrow{color:#3DD68C}
+.stats .eyebrow::before{background:#3DD68C}
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:38px 0 26px}
+.stat-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);padding:26px}
+.stat-card .k{font-size:13px;color:rgba(255,255,255,.7);margin-bottom:6px}
+.stat-card .v{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:34px;color:#fff;line-height:1.2}
+.stat-card .v small{font-size:15px;font-weight:700;margin-left:2px}
+.stat-card .s{font-size:12.5px;color:#3DD68C;font-weight:700;margin-top:6px}
+.stats p.note{font-size:14.5px;color:rgba(255,255,255,.82);max-width:760px}
+@media(max-width:760px){.stat-grid{grid-template-columns:1fr}}
+
+/* ---------- expert ---------- */
+.expert .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:54px;align-items:start}
+.expert-photo{position:relative}
+.expert-photo img{border-radius:18px;box-shadow:var(--shadow-lg);width:100%;object-fit:cover;aspect-ratio:4/4.6}
+.expert-name{
+  position:absolute;bottom:18px;left:18px;background:rgba(7,26,51,.85);color:#fff;
+  border-radius:10px;padding:10px 18px;backdrop-filter:blur(4px);
+}
+.expert-name small{display:block;font-size:11px;opacity:.8}
+.expert-name b{font-family:"Zen Kaku Gothic New",sans-serif;font-size:17px}
+.cred-list{list-style:none;margin:26px 0}
+.cred-list li{
+  display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line);font-size:15px;align-items:flex-start;
+}
+.cred-list li:first-child{border-top:1px solid var(--line)}
+.cred-ic{flex:none;width:40px;height:40px;border-radius:10px;background:var(--green-soft);color:var(--green);
+  display:flex;align-items:center;justify-content:center;font-size:18px}
+.cred-list b{display:block;color:var(--navy);font-size:15.5px}
+.cred-list span{color:var(--muted);font-size:13.5px;line-height:1.7}
+.expert-quote{
+  background:var(--navy-soft);border-left:4px solid var(--green);border-radius:0 12px 12px 0;
+  padding:20px 24px;font-size:14.5px;color:var(--ink);
+}
+@media(max-width:880px){.expert .wrap{grid-template-columns:1fr;gap:34px}.expert-photo{max-width:420px;margin:0 auto}}
+
+/* ---------- services ---------- */
+.services{background:var(--green-soft)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+.svc-card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.svc-card img{aspect-ratio:16/9.5;object-fit:cover;width:100%}
+.svc-body{padding:22px 24px 24px;flex:1;display:flex;flex-direction:column}
+.svc-step{font-size:11.5px;font-weight:700;color:var(--green);letter-spacing:.12em;margin-bottom:6px}
+.svc-card h3{font-size:17.5px;font-weight:900;margin-bottom:10px}
+.svc-card p{font-size:14px;color:var(--muted);flex:1}
+.svc-deliv{margin-top:14px;background:var(--navy-soft);border-radius:8px;padding:10px 14px;font-size:12.5px;color:var(--navy);font-weight:700}
+.svc-deliv::before{content:"納品物・成果 ▸ ";color:var(--green)}
+.flow{margin-top:54px;background:#fff;border-radius:var(--radius);padding:34px 32px;box-shadow:var(--shadow)}
+.flow h3{font-size:18px;font-weight:900;margin-bottom:24px;text-align:center}
+.flow-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.flow-step{text-align:center;position:relative;padding:0 8px}
+.flow-step:not(:last-child)::after{content:"›";position:absolute;right:-8px;top:14px;color:var(--green);font-size:24px;font-weight:700}
+.flow-num{width:46px;height:46px;border-radius:50%;background:var(--navy);color:#fff;font-family:"Zen Kaku Gothic New",sans-serif;
+  font-weight:900;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-size:17px}
+.flow-step b{display:block;font-size:14.5px;color:var(--navy);margin-bottom:4px}
+.flow-step span{font-size:12.5px;color:var(--muted);line-height:1.6;display:block}
+@media(max-width:880px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){
+  .svc-grid{grid-template-columns:1fr}
+  .flow-steps{grid-template-columns:1fr 1fr;gap:20px}
+  .flow-step:not(:last-child)::after{display:none}
+}
+
+/* ---------- plans ---------- */
+.plan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px;align-items:stretch}
+.plan{
+  background:#fff;border:1.5px solid var(--line);border-radius:var(--radius);
+  padding:32px 28px;display:flex;flex-direction:column;position:relative;
+}
+.plan.featured{border-color:var(--green);box-shadow:var(--shadow-lg)}
+.plan.featured::before{
+  content:"まずはここから · 一番選ばれています";position:absolute;top:-15px;left:50%;transform:translateX(-50%);
+  background:var(--green);color:#fff;font-size:12px;font-weight:700;border-radius:999px;padding:6px 18px;white-space:nowrap;
+}
+.plan-kind{font-size:12.5px;font-weight:700;color:var(--green);letter-spacing:.1em;margin-bottom:6px}
+.plan h3{font-size:20px;font-weight:900;margin-bottom:8px}
+.plan-price{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:30px;color:var(--navy);margin-bottom:4px}
+.plan-price small{font-size:14px;font-weight:700;color:var(--muted)}
+.plan-tax{font-size:12px;color:var(--muted);margin-bottom:18px}
+.plan ul{list-style:none;margin-bottom:18px}
+.plan li{position:relative;padding-left:22px;font-size:14px;margin-bottom:9px}
+.plan li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:700}
+.plan-fit{
+  background:var(--navy-soft);border-radius:10px;padding:14px 16px;font-size:13px;margin-bottom:20px;
+  color:var(--navy);
+}
+.plan-fit b{display:block;font-size:12px;color:var(--green);margin-bottom:3px;letter-spacing:.06em}
+.plan .btn{margin-top:auto;width:100%}
+@media(max-width:880px){.plan-grid{grid-template-columns:1fr;max-width:480px;margin-left:auto;margin-right:auto}.plan.featured{order:-1}}
+
+/* ---------- subsidy ---------- */
+.subsidy{background:linear-gradient(160deg,#0B2545,#0E3A2C);color:#fff}
+.subsidy .eyebrow{color:#3DD68C}.subsidy .eyebrow::before{background:#3DD68C}
+.subsidy .sec-title{color:#fff}
+.subsidy .sec-lead{color:rgba(255,255,255,.8)}
+.subsidy-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;margin-top:36px;align-items:start}
+.sub-check{background:#fff;border-radius:var(--radius);padding:30px 30px 26px;color:var(--ink);box-shadow:var(--shadow-lg)}
+.sub-check h3{font-size:17px;font-weight:900;margin-bottom:18px;display:flex;gap:10px;align-items:center}
+.sub-check h3::before{content:"☑";color:var(--green);font-size:22px}
+.sub-check ul{list-style:none}
+.sub-check li{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--line);font-size:14.5px}
+.sub-check li::before{content:"✓";flex:none;width:22px;height:22px;border-radius:50%;background:var(--green-soft);
+  color:var(--green);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:3px}
+.sub-check .sub-cta{margin-top:22px;text-align:center}
+.sub-check .sub-cta p{font-size:13.5px;font-weight:700;color:var(--navy);margin-bottom:12px}
+.sub-points{display:grid;gap:14px}
+.sub-point{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:20px 22px}
+.sub-point b{display:flex;gap:10px;align-items:center;font-size:15.5px;margin-bottom:6px;font-family:"Zen Kaku Gothic New",sans-serif}
+.sub-point b i{font-style:normal;background:#3DD68C;color:var(--navy-deep);border-radius:6px;font-size:12px;padding:2px 8px;font-weight:700}
+.sub-point p{font-size:13.5px;color:rgba(255,255,255,.82)}
+.sub-docs{margin-top:20px;display:flex;flex-wrap:wrap;gap:12px}
+.sub-docs a{font-size:13px;font-weight:700;border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:9px 18px;transition:.2s}
+.sub-docs a:hover{background:#fff;color:var(--navy)}
+.sub-note{margin-top:28px;font-size:12px;color:rgba(255,255,255,.6);line-height:1.9;border-top:1px solid rgba(255,255,255,.15);padding-top:18px}
+@media(max-width:880px){.subsidy-grid{grid-template-columns:1fr}}
+
+/* ---------- check banner ---------- */
+.checkban{padding:0}
+.checkban .inner{
+  background:var(--green-soft);border:1.5px solid #CDE8DC;border-radius:20px;
+  padding:44px 40px;display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap;
+  margin:0 22px;max-width:1080px;margin-left:auto;margin-right:auto;
+}
+.checkban h2{font-size:clamp(20px,2.6vw,26px);font-weight:900;margin-bottom:8px}
+.checkban p{font-size:14.5px;color:var(--muted);max-width:560px}
+.checkban .min{display:inline-block;background:var(--navy);color:#fff;font-size:12px;font-weight:700;border-radius:6px;padding:3px 10px;margin-bottom:12px}
+
+/* ---------- FAQ ---------- */
+.faq-list{margin-top:36px;max-width:820px}
+details{border:1px solid var(--line);border-radius:12px;margin-bottom:12px;background:#fff;overflow:hidden}
+details[open]{border-color:var(--green)}
+summary{
+  cursor:pointer;list-style:none;display:flex;gap:14px;align-items:flex-start;
+  padding:20px 22px;font-weight:700;font-size:15.5px;color:var(--navy);
+}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"Q";flex:none;width:28px;height:28px;border-radius:8px;background:var(--navy);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:14px;font-family:"Zen Kaku Gothic New",sans-serif}
+summary::after{content:"+";margin-left:auto;color:var(--green);font-size:22px;font-weight:400;line-height:1}
+details[open] summary::after{content:"−"}
+.faq-a{display:flex;gap:14px;padding:0 22px 22px;font-size:14.5px;color:var(--ink)}
+.faq-a::before{content:"A";flex:none;width:28px;height:28px;border-radius:8px;background:var(--green-soft);color:var(--green);
+  display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;font-family:"Zen Kaku Gothic New",sans-serif}
+
+/* ---------- final CTA ---------- */
+.final{background:var(--navy);color:#fff;text-align:center}
+.final .sec-title{color:#fff;font-size:clamp(24px,3.4vw,34px)}
+.final p.lead{color:rgba(255,255,255,.82);max-width:640px;margin:0 auto 34px;font-size:15.5px}
+.final-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:30px}
+.final-sub{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;font-size:14px}
+.final-sub a{text-decoration:underline;text-underline-offset:4px;color:rgba(255,255,255,.85)}
+.final-sub a:hover{color:#3DD68C}
+.final-tel{margin-top:34px;font-size:13px;color:rgba(255,255,255,.7)}
+.final-tel strong{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-size:30px;color:#fff;letter-spacing:.03em}
+
+/* ---------- footer ---------- */
+footer{background:var(--navy-deep);color:rgba(255,255,255,.75);padding:50px 0 110px;font-size:13.5px}
+.foot-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px}
+.foot-brand{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;color:#fff;font-size:17px;margin-bottom:14px}
+footer dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px}
+footer dt{color:rgba(255,255,255,.5);white-space:nowrap}
+footer a:hover{color:#3DD68C}
+.foot-nav{display:grid;gap:10px;align-content:start}
+.copyright{margin-top:36px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);font-size:12px;color:rgba(255,255,255,.45)}
+@media(max-width:760px){.foot-grid{grid-template-columns:1fr}}
+
+/* ---------- mobile sticky CTA ---------- */
+.sticky-cta{
+  position:fixed;left:0;right:0;bottom:0;z-index:120;display:none;
+  background:rgba(255,255,255,.97);border-top:1px solid var(--line);
+  padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px;
+  box-shadow:0 -6px 24px rgba(11,37,69,.12);
+}
+.sticky-cta a{flex:1;text-align:center;font-weight:700;font-size:14px;border-radius:10px;padding:14px 6px}
+.sticky-cta .s-primary{background:var(--green);color:#fff}
+.sticky-cta .s-secondary{background:var(--navy-soft);color:var(--navy);border:1.5px solid var(--navy)}
+@media(max-width:880px){.sticky-cta{display:flex}}
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="wrap header-in">
+    <a class="brand" href="#top">
+      <img src="/assets/prizenes-logo-mark.png" alt="プライズネス ロゴ">
+      <span>プライズネス<small>健康経営サポート｜札幌・北海道</small></span>
+    </a>
+    <nav class="gnav" aria-label="グローバルナビゲーション">
+      <a href="#industries">業種別の課題</a>
+      <a href="#services">サービス</a>
+      <a href="#plans">料金</a>
+      <a href="#subsidy">補助金</a>
+      <a href="#faq">よくある質問</a>
+    </nav>
+    <div class="header-cta">
+      <div class="header-tel">お電話でのご相談<strong>011-600-6048</strong></div>
+      <a class="btn btn-primary btn-sm" href="/contact">無料相談</a>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="hero-badge">札幌・北海道の企業向け｜訪問対応</span>
+      <h1>従業員の<span class="hl">腰痛・転倒・休職リスク</span>を、<br>理学療法士が職場単位で<span class="hl">見える化</span>。</h1>
+      <p class="lead">「誰が・どの作業で・どんなリスクを抱えているか」を専門家が評価し、労災・休職を未然に防ぐ職場づくりへ。介護・製造・運送・建設・オフィスまで、現場に合わせてご提案します。</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="/contact">無料相談を申し込む <span class="arw">→</span></a>
+        <a class="btn btn-ghost-light" href="/check">まず3分でリスクチェック</a>
+      </div>
+      <div class="hero-trust">
+        <span>✓ 理学療法士（国家資格）が直接対応</span>
+        <span>✓ エイジフレンドリー補助金の活用相談OK</span>
+        <span>✓ 相談・お見積りは無料</span>
+      </div>
+    </div>
+    <div class="report-card" aria-hidden="true">
+      <div class="report-head">SAMPLE REPORT</div>
+      <div class="report-title">職場リスク見える化レポート</div>
+      <div class="risk-row">
+        <div class="label"><em>腰痛リスク（介助・運搬作業）</em><em style="color:#C0533B">高</em></div>
+        <div class="bar"><i class="high"></i></div>
+      </div>
+      <div class="risk-row">
+        <div class="label"><em>転倒リスク（60歳以上の従業員）</em><em style="color:#B8860B">中</em></div>
+        <div class="bar"><i class="mid"></i></div>
+      </div>
+      <div class="risk-row">
+        <div class="label"><em>身体機能（筋力・バランス）</em><em style="color:var(--green)">維持</em></div>
+        <div class="bar"><i class="low"></i></div>
+      </div>
+      <div class="report-note"><b>改善提案 ▸</b>持ち上げ動作の指導＋月1回の機能チェックで休業リスクを低減</div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= PROBLEMS ================= -->
+<section class="problems">
+  <div class="wrap">
+    <span class="eyebrow">こんなお悩みありませんか</span>
+    <h2 class="sec-title">従業員の「身体の不調」は、<br>放置すると休職・労災・離職につながります。</h2>
+    <p class="sec-lead">1つでも当てはまる企業さまは、早めの対策で休業コストと労災リスクを大きく減らせる可能性があります。</p>
+    <div class="prob-grid">
+      <div class="prob-card">腰痛や膝の痛みを訴える従業員が増えてきた</div>
+      <div class="prob-card">60歳以上の従業員が増え、転倒やケガが心配</div>
+      <div class="prob-card">人手不足で、1人休むと現場が回らない</div>
+      <div class="prob-card">労災・休職予防の取り組みを強化したいが、社内に専門家がいない</div>
+      <div class="prob-card">健康経営に取り組みたいが、何から始めればいいか分からない</div>
+      <div class="prob-card">安全衛生委員会で報告できる「形になる対策」がほしい</div>
+    </div>
+    <div class="prob-cta">
+      <p>「うちの場合はどう?」も含めて、まず無料でご相談ください。</p>
+      <a class="btn btn-primary" href="/contact">無料相談で課題を整理する <span class="arw">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INDUSTRIES ================= -->
+<section id="industries">
+  <div class="wrap">
+    <span class="eyebrow">業種別の課題と支援内容</span>
+    <h2 class="sec-title">あなたの業種では、こんな支援ができます。</h2>
+    <p class="sec-lead">業種によって、起きやすいケガも有効な対策も異なります。理学療法士が現場の作業を実際に見て、その職場専用の対策をつくります。</p>
+
+    <div class="tabs" role="tablist" aria-label="業種を選択">
+      <button class="tab-btn" role="tab" aria-selected="true" data-tab="kaigo">介護・福祉</button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="seizo">製造業</button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="unso">運送業</button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="kensetsu">建設・現場作業</button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="office">事務・デスクワーク</button>
+    </div>
+
+    <div class="tab-panel active" id="panel-kaigo" role="tabpanel">
+      <div class="ind-card issue">
+        <h3><span class="tag tag-issue">よくある課題</span>介護・福祉施設</h3>
+        <ul>
+          <li>移乗・入浴介助による職員の腰痛が慢性化している</li>
+          <li>腰痛を理由とした休職・離職が採用難に拍車をかけている</li>
+          <li>ベテラン職員ほど「自己流の介助動作」が定着している</li>
+        </ul>
+      </div>
+      <div class="ind-card sol">
+        <h3><span class="tag tag-sol">プライズネスができること</span></h3>
+        <ul>
+          <li>介助動作を現場で評価し、腰に負担の少ない動作を個別指導</li>
+          <li>職員の筋力・柔軟性チェックで「腰痛予備群」を早期発見</li>
+          <li>施設内研修として腰痛予防セミナーを実施（処遇改善の取組実績にも）</li>
+        </ul>
+      </div>
+      <div class="ind-foot"><a class="btn btn-outline btn-sm" href="/contact">介護施設の腰痛対策を相談する</a></div>
+    </div>
+
+    <div class="tab-panel" id="panel-seizo" role="tabpanel">
+      <div class="ind-card issue">
+        <h3><span class="tag tag-issue">よくある課題</span>製造業</h3>
+        <ul>
+          <li>立ち作業・重量物の運搬で腰痛・肩の不調が多発</li>
+          <li>高年齢の熟練工が増え、転倒・墜落リスクが上昇</li>
+          <li>安全衛生活動が「声かけ・標語」止まりになっている</li>
+        </ul>
+      </div>
+      <div class="ind-card sol">
+        <h3><span class="tag tag-sol">プライズネスができること</span></h3>
+        <ul>
+          <li>作業ラインを巡回し、姿勢・動作・作業導線のリスクを評価</li>
+          <li>持ち上げ・運搬動作の安全な方法を実技で指導</li>
+          <li>高年齢従業員の身体機能チェックで配置・対策の判断材料を提供</li>
+        </ul>
+      </div>
+      <div class="ind-foot"><a class="btn btn-outline btn-sm" href="/contact">製造現場の労災予防を相談する</a></div>
+    </div>
+
+    <div class="tab-panel" id="panel-unso" role="tabpanel">
+      <div class="ind-card issue">
+        <h3><span class="tag tag-issue">よくある課題</span>運送業</h3>
+        <ul>
+          <li>荷役作業での腰痛、荷台からの転落・飛び降りによるケガ</li>
+          <li>長時間運転による腰・肩の慢性的な不調</li>
+          <li>ドライバー不足で1人の休業が配送計画に直結する</li>
+        </ul>
+      </div>
+      <div class="ind-card sol">
+        <h3><span class="tag tag-sol">プライズネスができること</span></h3>
+        <ul>
+          <li>荷役・積み下ろし動作の評価と、腰を守る動作指導</li>
+          <li>運転前後にできる簡単な体操・コンディショニングの導入支援</li>
+          <li>点呼時間を活用した短時間セミナーなど、現場に無理のない形で実施</li>
+        </ul>
+      </div>
+      <div class="ind-foot"><a class="btn btn-outline btn-sm" href="/contact">ドライバーの腰痛対策を相談する</a></div>
+    </div>
+
+    <div class="tab-panel" id="panel-kensetsu" role="tabpanel">
+      <div class="ind-card issue">
+        <h3><span class="tag tag-issue">よくある課題</span>建設・現場作業</h3>
+        <ul>
+          <li>墜落・転落、足場や段差での転倒が常にリスクになっている</li>
+          <li>冬季の凍結路面・積雪での転倒災害（北海道特有の課題）</li>
+          <li>高年齢の職人のバランス能力・筋力低下が見えにくい</li>
+        </ul>
+      </div>
+      <div class="ind-card sol">
+        <h3><span class="tag tag-sol">プライズネスができること</span></h3>
+        <ul>
+          <li>バランス・筋力・歩行の機能チェックで転倒リスクを数値化</li>
+          <li>朝礼・安全大会で使える転倒予防体操・セミナーを提供</li>
+          <li>エイジフレンドリー補助金を活用した対策の組み立てを支援</li>
+        </ul>
+      </div>
+      <div class="ind-foot"><a class="btn btn-outline btn-sm" href="/contact">現場の転倒・墜落対策を相談する</a></div>
+    </div>
+
+    <div class="tab-panel" id="panel-office" role="tabpanel">
+      <div class="ind-card issue">
+        <h3><span class="tag tag-issue">よくある課題</span>事務職・デスクワーク</h3>
+        <ul>
+          <li>長時間の座位姿勢による腰痛・肩こり・頭痛の訴えが多い</li>
+          <li>不調による集中力低下・生産性低下（プレゼンティーズム）</li>
+          <li>健康経営優良法人の認定に向けた具体的な取組が足りない</li>
+        </ul>
+      </div>
+      <div class="ind-card sol">
+        <h3><span class="tag tag-sol">プライズネスができること</span></h3>
+        <ul>
+          <li>デスク環境・座り姿勢の評価と、すぐできる改善提案</li>
+          <li>オフィスでできる姿勢改善・肩こり腰痛予防セミナー</li>
+          <li>健康経営の取組実績として報告できるレポートを提供</li>
+        </ul>
+      </div>
+      <div class="ind-foot"><a class="btn btn-outline btn-sm" href="/contact">オフィスの健康経営を相談する</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="stats">
+  <div class="wrap">
+    <span class="eyebrow">データで見る労災リスク</span>
+    <h2 class="sec-title">労災で最も多いのは「転倒」。<br>次いで腰痛などの無理な動作です。</h2>
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="k">休業4日以上の死傷者数（令和7年）</div>
+        <div class="v">135,333<small>人</small></div>
+        <div class="s">前年比ほぼ横ばい・高止まり</div>
+      </div>
+      <div class="stat-card">
+        <div class="k">最多の事故の型「転倒」</div>
+        <div class="v">37,195<small>人</small></div>
+        <div class="s">全体の約4分の1以上を占める</div>
+      </div>
+      <div class="stat-card">
+        <div class="k">動作の反動・無理な動作（腰痛等）</div>
+        <div class="v">22,166<small>人</small></div>
+        <div class="s">予防可能性の高い災害類型</div>
+      </div>
+    </div>
+    <p class="note">転倒や腰痛は「不注意」だけが原因ではありません。筋力・バランス能力・柔軟性の低下、疲労の蓄積、作業姿勢の癖が背景にあるケースが多く、<strong style="color:#3DD68C">身体機能と職場環境の両面からの評価</strong>が予防の鍵になります。これこそ、理学療法士が最も得意とする領域です。<br><span style="font-size:12px;color:rgba(255,255,255,.5)">出典：厚生労働省「令和7年 労働災害発生状況」</span></p>
+  </div>
+</section>
+
+<!-- ================= EXPERT ================= -->
+<section class="expert">
+  <div class="wrap">
+    <div class="expert-photo">
+      <img src="/narita-satoshi-suit.jpg" alt="札幌で企業の健康経営を支援する理学療法士 成田悟志">
+      <div class="expert-name"><small>理学療法士／株式会社プライズライフ 代表</small><b>成田 悟志</b></div>
+    </div>
+    <div>
+      <span class="eyebrow">なぜ理学療法士なのか</span>
+      <h2 class="sec-title">「身体とケガの専門家」が、<br>御社の現場を直接見ます。</h2>
+      <p class="sec-lead">研修会社の汎用プログラムではなく、医療現場で身体機能の評価・回復を担ってきた国家資格者が、御社の従業員と作業を直接評価します。</p>
+      <ul class="cred-list">
+        <li>
+          <span class="cred-ic">🏥</span>
+          <div><b>医療機関での臨床経験</b><span>病院で腰痛・骨折・術後リハビリ等の患者さまを多数担当。「不調が起きる前の兆候」を見抜く臨床の目を持っています。</span></div>
+        </li>
+        <li>
+          <span class="cred-ic">📊</span>
+          <div><b>姿勢・筋力・歩行・動作の専門的評価</b><span>感覚や経験則ではなく、理学療法の評価手法で従業員の状態を客観的に把握。対策の優先順位を明確にします。</span></div>
+        </li>
+        <li>
+          <span class="cred-ic">👥</span>
+          <div><b>高齢者の運動支援実績</b><span>高齢者への運動指導経験が豊富。高年齢労働者の転倒予防・体力維持の支援は最も得意とする分野です。</span></div>
+        </li>
+        <li>
+          <span class="cred-ic">🏢</span>
+          <div><b>札幌でリハビリジム「プライズネス」を運営</b><span>札幌市西区琴似で運動施設を実際に運営。地域に拠点があるからこそ、訪問・継続支援にすぐ動けます。</span></div>
+        </li>
+      </ul>
+      <div class="expert-quote">「従業員の腰痛やケガを<b>本人の問題で終わらせない</b>こと。身体機能・作業動作・職場環境の3つをあわせて見ることで、初めて再発しない対策になります。まずは現場の課題を聞かせてください。」</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="services" id="services">
+  <div class="wrap">
+    <span class="eyebrow">サービス内容</span>
+    <h2 class="sec-title">評価から改善・定着まで、<br>現場に合わせて組み合わせます。</h2>
+    <p class="sec-lead">すべて法人向けの予防支援サービスです（医療行為・治療ではありません）。単発でも、組み合わせての継続支援でも導入できます。</p>
+
+    <div class="svc-grid">
+      <div class="svc-card">
+        <img src="/workplace-visit.png" alt="札幌の企業を訪問し作業動作を評価する理学療法士" loading="lazy">
+        <div class="svc-body">
+          <div class="svc-step">SERVICE 01</div>
+          <h3>職場訪問評価</h3>
+          <p>介助・運搬・立ち作業・デスクワークなどの作業動作、姿勢、作業導線、職場環境を現場で評価し、腰痛・転倒リスクを特定します。</p>
+          <div class="svc-deliv">リスク評価結果＋改善の優先順位</div>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img src="/service-body-check.png" alt="従業員の筋力・バランスなど身体機能チェックの様子" loading="lazy">
+        <div class="svc-body">
+          <div class="svc-step">SERVICE 02</div>
+          <h3>身体機能チェック</h3>
+          <p>筋力・柔軟性・バランス・歩行など、働くうえで必要な身体機能を測定。高年齢従業員の転倒リスクや腰痛予備群を早期に発見します。</p>
+          <div class="svc-deliv">個人別の機能チェック結果シート</div>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img src="/service-health-seminar.png" alt="札幌の企業向け腰痛・転倒予防セミナーの様子" loading="lazy">
+        <div class="svc-body">
+          <div class="svc-step">SERVICE 03</div>
+          <h3>腰痛・転倒予防セミナー</h3>
+          <p>腰痛予防、転倒予防、疲労対策、姿勢改善などをテーマに、実技中心で実施。朝礼・安全大会・社内研修に組み込めます。</p>
+          <div class="svc-deliv">配布資料＋職場で続けられる体操メニュー</div>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img src="/service-work-movement.png" alt="改善提案レポートをもとに作業姿勢を確認する様子" loading="lazy">
+        <div class="svc-body">
+          <div class="svc-step">SERVICE 04</div>
+          <h3>改善提案レポート</h3>
+          <p>評価結果を「誰が読んでも分かる」レポートに整理。安全衛生委員会・経営会議・補助金申請の資料としてそのまま活用できます。</p>
+          <div class="svc-deliv">見える化レポート（社内報告用）</div>
+        </div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-body" style="padding-top:28px">
+          <div class="svc-step">SERVICE 05</div>
+          <h3>継続サポート</h3>
+          <p>月1回などの定期訪問で、評価→指導→効果確認のサイクルを継続。「やりっぱなし」にせず、職場に予防の習慣を定着させます。</p>
+          <div class="svc-deliv">定期レポート＋取組の効果測定</div>
+        </div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-body" style="padding-top:28px">
+          <div class="svc-step">OPTION</div>
+          <h3>補助金活用の整理支援</h3>
+          <p>エイジフレンドリー補助金など、活用できそうな制度に合わせて取組内容を整理。「対象になりそうか」の段階から無料で相談できます。</p>
+          <div class="svc-deliv">取組内容の整理メモ（申請検討用）</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flow">
+      <h3>導入までの流れ — 最短2週間で現場評価まで</h3>
+      <div class="flow-steps">
+        <div class="flow-step">
+          <div class="flow-num">1</div>
+          <b>無料相談</b>
+          <span>オンライン・電話・訪問で課題をヒアリング（30〜60分）</span>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">2</div>
+          <b>ご提案・お見積り</b>
+          <span>課題と予算に合わせたプランを提示。補助金活用も検討</span>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">3</div>
+          <b>訪問評価・実施</b>
+          <span>現場で評価・チェック・セミナーを実施</span>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">4</div>
+          <b>報告・改善へ</b>
+          <span>レポート納品。継続支援で定着までフォロー</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PLANS ================= -->
+<section id="plans">
+  <div class="wrap">
+    <span class="eyebrow">料金プラン</span>
+    <h2 class="sec-title">まずは小さく試して、効果を見て広げられます。</h2>
+    <p class="sec-lead">いずれも訪問・準備・資料を含む法人向け価格です。従業員数・回数・内容により変動するため、まずは無料相談でお見積りください。</p>
+
+    <div class="plan-grid">
+      <div class="plan">
+        <div class="plan-kind">STEP 1 ─ お試し導入</div>
+        <h3>単発セミナー</h3>
+        <div class="plan-price">55,000<small>円〜</small></div>
+        <div class="plan-tax">税込・1回 / 60〜90分</div>
+        <ul>
+          <li>腰痛予防・転倒予防・姿勢改善など選べるテーマ</li>
+          <li>実技中心で「明日から使える」内容</li>
+          <li>配布資料・体操メニュー付き</li>
+        </ul>
+        <div class="plan-fit"><b>こんな会社に</b>まず1回試したい／安全大会・社内研修の枠で実施したい</div>
+        <a class="btn btn-outline" href="/contact">セミナーを相談する</a>
+      </div>
+
+      <div class="plan featured">
+        <div class="plan-kind">STEP 2 ─ おすすめ</div>
+        <h3>職場訪問評価</h3>
+        <div class="plan-price">132,000<small>円〜</small></div>
+        <div class="plan-tax">税込・1式（訪問評価＋レポート）</div>
+        <ul>
+          <li>作業動作・姿勢・職場環境を現場で評価</li>
+          <li>従業員の身体機能チェック</li>
+          <li>見える化レポート＋改善提案を納品</li>
+          <li>エイジフレンドリー補助金の取組整理にも対応</li>
+        </ul>
+        <div class="plan-fit"><b>こんな会社に</b>腰痛・転倒の課題を本格的に把握したい／補助金活用を視野に入れたい</div>
+        <a class="btn btn-primary" href="/contact">訪問評価を相談する</a>
+      </div>
+
+      <div class="plan">
+        <div class="plan-kind">STEP 3 ─ 定着支援</div>
+        <h3>継続サポート</h3>
+        <div class="plan-price">月額 88,000<small>円〜</small></div>
+        <div class="plan-tax">税込・内容により設計</div>
+        <ul>
+          <li>定期訪問（評価・指導・セミナーを組み合わせ）</li>
+          <li>取組の効果測定と定期レポート</li>
+          <li>健康経営・安全衛生活動の年間計画を伴走支援</li>
+        </ul>
+        <div class="plan-fit"><b>こんな会社に</b>健康経営優良法人を目指したい／対策を一過性で終わらせたくない</div>
+        <a class="btn btn-outline" href="/contact">継続支援を相談する</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SUBSIDY ================= -->
+<section class="subsidy" id="subsidy">
+  <div class="wrap">
+    <span class="eyebrow">補助金を活用した導入</span>
+    <h2 class="sec-title">60歳以上の従業員がいる中小企業は、<br>エイジフレンドリー補助金を使える可能性があります。</h2>
+    <p class="sec-lead">令和8年度エイジフレンドリー補助金では、転倒防止・腰痛予防のための<strong style="color:#3DD68C">身体機能チェックや運動指導等の取組</strong>が示されています。プライズネスの支援内容と関連の深い制度です。</p>
+
+    <div class="subsidy-grid">
+      <div class="sub-check">
+        <h3>30秒セルフチェック ── 当てはまりますか?</h3>
+        <ul>
+          <li>役員を除く、労災保険適用の<strong>60歳以上の従業員が常時1名以上</strong>いる</li>
+          <li><strong>1年以上</strong>事業を実施している中小企業事業者である</li>
+          <li>転倒防止・腰痛予防、身体機能チェック、運動指導などの取組を検討したい</li>
+        </ul>
+        <div class="sub-cta">
+          <p>すべて当てはまりそうなら、対象になる可能性があります。<br>「うちは対象?」の段階から、無料でご相談いただけます。</p>
+          <a class="btn btn-primary" style="width:100%" href="/contact">補助金活用について無料相談する <span class="arw">→</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="sub-points">
+          <div class="sub-point">
+            <b><i>補助率</i>転倒防止・腰痛予防の取組</b>
+            <p>身体機能チェックや運動指導等は、補助率1/2・上限額100万円の対象となる可能性があります。</p>
+          </div>
+          <div class="sub-point">
+            <b><i>期間</i>令和8年度の申請期間</b>
+            <p>申請期間は令和8年5月20日〜10月31日。専門家総合対策コース第1段階の申請期限は8月31日です。早めの準備をおすすめします。</p>
+          </div>
+          <div class="sub-point">
+            <b><i>支援</i>プライズネスの役割</b>
+            <p>理学療法士の視点で、職場の作業動作・身体機能・職場環境を確認し、補助金活用を見据えた取組内容の整理をサポートします。</p>
+          </div>
+        </div>
+        <div class="sub-docs">
+          <a href="/assets/age-friendly-subsidy-leaflet-r8.pdf">公式リーフレットを見る（PDF）</a>
+          <a href="/assets/age-friendly-subsidy-qa-r8.pdf">公式Q&amp;Aを見る（PDF）</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="sub-note">※本セクションは制度の概要を紹介するものであり、補助金の採択・交付を保証するものではありません。<br>※補助金の対象可否、申請要件、対象経費は年度・事業内容・審査結果により異なります。申請をご検討の場合は、必ず最新の公募要領・Q&amp;Aをご確認ください。</p>
+  </div>
+</section>
+
+<!-- ================= 3MIN CHECK BANNER ================= -->
+<section class="checkban">
+  <div class="inner">
+    <div>
+      <span class="min">所要時間 約3分・無料</span>
+      <h2>まずは自社のリスクをセルフチェック。</h2>
+      <p>腰痛・転倒・労災リスクにつながりやすい職場の状態を、30項目で簡易確認できます。結果はそのまま無料相談の材料にもなります。</p>
+    </div>
+    <a class="btn btn-primary" href="/check">3分チェックをはじめる <span class="arw">→</span></a>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq">
+  <div class="wrap">
+    <span class="eyebrow">よくある質問</span>
+    <h2 class="sec-title">導入前の不安にお答えします。</h2>
+    <div class="faq-list">
+      <details>
+        <summary>従業員が数名の小さな会社でも依頼できますか?</summary>
+        <div class="faq-a">はい、可能です。従業員数名の事業所から導入いただけます。規模に合わせて内容と費用を調整しますので、まずは無料相談でご状況をお聞かせください。</div>
+      </details>
+      <details>
+        <summary>業務時間中に実施できますか? 現場を止めたくないのですが。</summary>
+        <div class="faq-a">現場を止めない形で設計します。通常業務中の動作をそのまま評価したり、朝礼・休憩・点呼の時間を活用した短時間プログラムにしたりと、現場の運用に合わせて柔軟に対応します。</div>
+      </details>
+      <details>
+        <summary>医療行為やマッサージをしてもらえるのですか?</summary>
+        <div class="faq-a">本サービスは治療・医療行為ではなく、予防のための評価・運動指導・職場改善支援です。すでに強い痛みやケガがある方には、適切な医療機関の受診をご案内します。</div>
+      </details>
+      <details>
+        <summary>補助金の申請まで代行してもらえますか?</summary>
+        <div class="faq-a">申請手続きの代行は行っていませんが、補助金活用を見据えた取組内容（身体機能チェック・運動指導・職場改善など）の整理をサポートします。対象可否や申請要件は、最新の公募要領・Q&amp;Aをご確認ください。「対象になりそうか」の段階からの無料相談も歓迎です。</div>
+      </details>
+      <details>
+        <summary>札幌市外でも対応してもらえますか?</summary>
+        <div class="faq-a">札幌市を中心に、北海道内の企業・事業所に対応しています。エリアによっては交通費等を別途いただく場合がありますので、無料相談時にご確認ください。</div>
+      </details>
+      <details>
+        <summary>無料相談では何を聞かれますか? 営業されませんか?</summary>
+        <div class="faq-a">業種・従業員構成・現在のお困りごとをお聞きし、「何から始めるべきか」を一緒に整理する場です。その場でのご契約を求めることはありません。相談の結果、導入が不要と判断されても問題ありません。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section class="final" id="contact">
+  <div class="wrap">
+    <span class="eyebrow" style="color:#3DD68C;justify-content:center;display:inline-flex">無料相談受付中</span>
+    <h2 class="sec-title">休職者が出てからでは、遅い。<br>まず「何から始めるべきか」の整理から。</h2>
+    <p class="lead">企業規模・職種・予算に合わせて、導入しやすい形をご提案します。相談したからといって契約の義務はありません。札幌・北海道の企業さまからのご相談をお待ちしています。</p>
+    <div class="final-ctas">
+      <a class="btn btn-primary" href="/contact">無料相談を申し込む <span class="arw">→</span></a>
+      <a class="btn btn-ghost-light" href="/check">3分チェックを試す</a>
+    </div>
+    <div class="final-sub">
+      <a href="/contact">補助金の対象になりそうか相談する</a>
+      <a href="/contact">サービス資料を請求する</a>
+    </div>
+    <div class="final-tel">お急ぎの方はお電話で（平日 9:00〜18:00）<strong>011-600-6048</strong></div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">プライズネス健康経営サポート</div>
+        <dl>
+          <dt>運営会社</dt><dd>株式会社プライズライフ</dd>
+          <dt>所在地</dt><dd>〒063-0812 北海道札幌市西区琴似2条3-1-1 チェストオオイビル3階</dd>
+          <dt>対応エリア</dt><dd>札幌市を中心に北海道内</dd>
+          <dt>電話</dt><dd><a href="tel:0116006048">011-600-6048</a></dd>
+          <dt>メール</dt><dd><a href="mailto:mail@prizenes.com">mail@prizenes.com</a></dd>
+          <dt>公式サイト</dt><dd><a href="https://prizenes.com">https://prizenes.com</a></dd>
+        </dl>
+      </div>
+      <nav class="foot-nav" aria-label="フッターナビゲーション">
         <a href="/services">サービス内容</a>
-        <a href="/check">健康リスクチェック</a>
+        <a href="/check">職場の健康リスク3分チェック</a>
+        <a href="/workplace-low-back-pain-check">職場の腰痛リスクチェック表</a>
         <a href="/plans">料金プラン</a>
-        <a href="/subsidy">補助金について</a>
-        <a href="/contact">お問い合わせ</a>
+        <a href="/subsidy">エイジフレンドリー補助金について</a>
+        <a href="/blog/occupational-accident-2025-health-management">令和7年 労働災害発生状況の解説記事</a>
+        <a href="/contact">お問い合わせ・無料相談</a>
       </nav>
-    </header>
+    </div>
+    <div class="copyright">札幌・北海道の健康経営支援、企業の腰痛予防・転倒予防・労災予防は、理学療法士によるプライズネス健康経営サポートへ。<br>© 株式会社プライズライフ All Rights Reserved.</div>
+  </div>
+</footer>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-content">
-          <p class="eyebrow">札幌・北海道の企業向け健康経営サポート</p>
-          <h1>従業員の腰痛・転倒・ケガを予防し、長く安全に働ける職場づくりを支援します</h1>
-          <p class="lead">
-            理学療法士が、従業員の身体機能・作業動作・職場環境を評価し、腰痛・転倒・労災リスクの予防を支援します。
-          </p>
-          <p class="local-seo-copy">
-            プライズネス健康経営サポートは、札幌市を中心に、北海道内の企業・事業所を対象として、従業員の腰痛・転倒・ケガ予防、労災リスクの低減、健康経営の取り組みを支援しています。
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="/contact">無料相談を申し込む</a>
-            <a class="button button-secondary" href="/check">3分チェックを試す</a>
-            <a class="button button-secondary" href="/services">サービス内容を見る</a>
-          </div>
-          <dl class="hero-points" aria-label="サービスの特徴">
-            <div>
-              <dt>専門性</dt>
-              <dd>理学療法士の視点</dd>
-            </div>
-            <div>
-              <dt>対象</dt>
-              <dd>企業・従業員</dd>
-            </div>
-            <div>
-              <dt>目的</dt>
-              <dd>予防と職場づくり</dd>
-            </div>
-          </dl>
-        </div>
-        <div class="hero-visual" aria-label="札幌の企業向けに職場動作を確認する理学療法士のイメージ">
-          <div class="workplace-photo">
-            <img src="./workplace-visit.png" alt="札幌の企業向けに職場動作を確認する理学療法士" />
-            <div class="assessment-card">
-              <strong>職場訪問・身体機能チェック</strong>
-              <small>現場で見て、従業員に合わせて提案します</small>
-            </div>
-          </div>
-        </div>
-      </section>
+<!-- ================= MOBILE STICKY CTA ================= -->
+<div class="sticky-cta">
+  <a class="s-secondary" href="/check">3分チェック</a>
+  <a class="s-primary" href="/contact">無料相談する</a>
+</div>
 
-      <section class="section concerns">
-        <div class="section-inner">
-          <div class="section-heading">
-            <p class="eyebrow">こんなお悩みはありませんか？</p>
-            <h2>身体の不調や安全面の不安を、会社全体の課題として整理します。</h2>
-          </div>
-          <div class="concern-grid">
-            <article>腰痛や膝痛を訴える従業員が増えている</article>
-            <article>高年齢の従業員が増え、転倒やケガが心配</article>
-            <article>人手不足で一人ひとりの身体的負担が大きい</article>
-            <article>健康経営に取り組みたいが、何から始めればよいかわからない</article>
-            <article>労災予防や休職予防の取り組みを強化したい</article>
-            <article>従業員向けの健康セミナーを実施したい</article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section data-insight">
-        <div class="section-inner">
-          <div class="section-heading">
-            <p class="eyebrow">労働災害データと健康経営</p>
-            <h2>厚生労働省データから見る、企業の転倒予防・腰痛対策と健康経営</h2>
-            <p>
-              札幌・北海道の企業に向けて、理学療法士が職場の労災予防と休業リスク対策を支援します。
-            </p>
-          </div>
-          <div class="stat-grid">
-            <article>
-              <span>死亡者数</span>
-              <strong>700人</strong>
-              <p>過去最少</p>
-            </article>
-            <article>
-              <span>休業4日以上の死傷者数</span>
-              <strong>135,333人</strong>
-              <p>前年と比べてほぼ横ばい</p>
-            </article>
-            <article>
-              <span>最多の事故の型</span>
-              <strong>転倒 37,195人</strong>
-              <p>身体機能と職場環境の両面から対策</p>
-            </article>
-          </div>
-          <div class="data-copy">
-            <p>
-              厚生労働省が公表した令和7年の労働災害発生状況では、死亡者数は700人と過去最少となりました。一方で、休業4日以上の死傷者数は135,333人で、前年と比べてほぼ横ばいの状況です。
-            </p>
-            <p>
-              特に多い事故の型は「転倒」37,195人、腰痛などの「動作の反動・無理な動作」22,166人、「墜落・転落」20,864人とされています。
-            </p>
-            <p>
-              転倒や腰痛は、単なる不注意だけでなく、筋力低下、バランス能力の低下、柔軟性の低下、疲労の蓄積、作業姿勢や身体の使い方の癖が関係していることもあります。
-            </p>
-            <p>
-              札幌の健康経営、企業の転倒予防、職場の腰痛対策、労災予防、休業リスク対策では、理学療法士による評価を通じて、身体機能と作業動作、職場環境をあわせて確認する視点が重要です。
-            </p>
-            <p>
-              プライズネス健康経営サポートでは、理学療法士が姿勢・筋力・バランス・動作を確認し、職場環境や作業動作とあわせて、腰痛・転倒・休業リスクの予防を支援します。
-            </p>
-            <a class="button button-primary" href="/blog/occupational-accident-2025-health-management">詳しく記事を読む</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section news-section">
-        <div class="section-inner">
-          <div class="section-heading section-heading-with-action">
-            <div>
-              <p class="eyebrow">新着情報</p>
-              <h2>健康経営・労災予防に関するお知らせ</h2>
-            </div>
-            <a class="button button-secondary" href="/blog/occupational-accident-2025-health-management">記事を読む</a>
-          </div>
-          <article class="news-card">
-            <time datetime="2026-06-04">2026.06.04</time>
-            <div>
-              <h3>令和7年の労働災害発生状況をもとに、企業の転倒・腰痛予防について解説しました</h3>
-              <p>
-                厚生労働省が公表した令和7年の労働災害発生状況では、死亡者数は過去最少となった一方で、休業4日以上の死傷者数は横ばいの状況です。
-              </p>
-              <p>
-                特に多い「転倒」「動作の反動・無理な動作」「墜落・転落」に着目し、企業に求められる転倒・腰痛予防と健康経営の取り組みについて解説しました。
-              </p>
-              <a href="/blog/occupational-accident-2025-health-management">記事を読む</a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="solution">
-        <div class="section-inner two-column">
-          <div class="solution-panel">
-            <p class="panel-label">プライズネスの支援方法</p>
-            <h2>身体機能と職場動作の両面から、リスクを見える化します。</h2>
-            <p>
-              医療行為や治療ではなく、従業員が安全に働き続けられる職場づくりを支援する法人向けサービスです。札幌 健康経営 サポート、北海道 健康経営 支援、札幌 労災予防に関するご相談に対応します。
-            </p>
-          </div>
-          <div class="steps">
-            <article>
-              <span>01</span>
-              <h3>見る</h3>
-              <p>職場動作、姿勢、環境、作業導線を確認します。</p>
-            </article>
-            <article>
-              <span>02</span>
-              <h3>測る</h3>
-              <p>身体機能チェックや腰痛・転倒リスク評価を行います。</p>
-            </article>
-            <article>
-              <span>03</span>
-              <h3>整える</h3>
-              <p>運動指導、職場改善提案、健康セミナーにつなげます。</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="service">
-        <div class="section-inner">
-          <div class="section-heading section-heading-with-action">
-            <div>
-              <p class="eyebrow">サービス内容</p>
-              <h2>現場に合わせて、必要な支援を組み合わせます。</h2>
-            </div>
-            <a class="button button-secondary" href="/services">詳しく見る</a>
-          </div>
-          <div class="service-list">
-            <article>
-              <figure class="service-photo"><img src="./service-work-movement.png" alt="工場で腰痛予防のための作業姿勢を確認する様子" /></figure>
-              <h3>職場動作の確認</h3>
-              <p>介助、運搬、立ち作業、デスクワークなどの姿勢や動作を確認します。</p>
-            </article>
-            <article>
-              <figure class="service-photo"><img src="./service-body-check.png" alt="高年齢労働者の転倒予防を支援する健康経営サポート" /></figure>
-              <h3>身体機能チェック</h3>
-              <p>筋力、柔軟性、バランス、歩行など、働くうえで必要な機能を確認します。</p>
-            </article>
-            <article>
-              <figure class="service-photo"><img src="./service-health-seminar.png" alt="札幌の企業向けに健康セミナーを行う理学療法士" /></figure>
-              <h3>健康セミナー</h3>
-              <p>腰痛予防、転倒予防、疲労対策、姿勢改善などをテーマに実施します。</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section risk-check" id="risk-check">
-        <div class="section-inner">
-          <div class="risk-intro">
-            <div>
-              <p class="eyebrow">職場の健康リスク簡易チェック</p>
-              <h2>30項目のチェックは専用ページで確認できます。</h2>
-              <p>
-                腰痛・転倒・労災リスクにつながりやすい職場の状態を、3分程度で簡易確認できます。結果は診断ではなく、相談や職場改善を始めるための目安です。
-              </p>
-              <a class="button button-primary" href="/check">今すぐチェックする</a>
-            </div>
-            <a class="risk-banner" href="/check" aria-label="職場の健康リスク簡易チェックを開始">
-              <img src="./risk-check-banner.png" alt="職場の健康リスク簡易チェック 3分で確認 今すぐチェック" />
-            </a>
-          </div>
-          <div class="low-back-cta">
-            <div>
-              <p class="eyebrow">職場の腰痛リスクを詳しく確認したい方へ</p>
-              <h3>作業姿勢・作業環境・身体機能・職場体制の4つの観点から整理できます。</h3>
-              <p>
-                重い物を持つ、前かがみ作業が多い、長時間同じ姿勢が続くなど、腰痛につながりやすい職場環境は少なくありません。プライズネスでは、企業向けに「職場の腰痛リスクチェック表」を用意し、作業姿勢・作業環境・身体機能・職場体制の4つの観点からリスクを整理できます。
-              </p>
-            </div>
-            <a class="button button-primary" href="/workplace-low-back-pain-check">職場の腰痛リスクチェック表を見る</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="plans">
-        <div class="section-inner">
-          <div class="section-heading section-heading-with-action">
-            <div>
-              <p class="eyebrow">料金プラン</p>
-              <h2>まずは小さく始めて、必要に応じて継続支援へ。</h2>
-            </div>
-            <a class="button button-secondary" href="/plans">詳しく見る</a>
-          </div>
-          <div class="plan-grid">
-            <article>
-              <span>セミナー</span>
-              <h3>単発セミナー</h3>
-              <strong class="plan-price">55,000円〜</strong>
-              <p>腰痛予防、転倒予防、姿勢改善などをテーマに実施します。</p>
-            </article>
-            <article class="recommended-plan">
-              <span>おすすめプラン</span>
-              <h3>職場訪問評価</h3>
-              <strong class="plan-price">132,000円〜</strong>
-              <p>作業現場を確認し、身体負担や環境面のリスクを整理します。</p>
-            </article>
-            <article>
-              <span>継続支援</span>
-              <h3>定期サポート</h3>
-              <strong class="plan-price">月額88,000円〜</strong>
-              <p>訪問、評価、改善提案、セミナーを組み合わせて支援します。</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section subsidy-preview">
-        <div class="section-inner">
-          <div class="subsidy-card">
-            <div class="section-heading">
-              <p class="eyebrow">補助金について</p>
-              <h2>令和8年度エイジフレンドリー補助金の活用相談にも対応</h2>
-              <p>
-                高年齢労働者の転倒・腰痛・身体的負担の予防に取り組む中小企業では、令和8年度エイジフレンドリー補助金を活用できる可能性があります。
-              </p>
-            </div>
-            <div class="subsidy-body">
-              <p>
-                令和8年度版では、60歳以上の高年齢労働者が安全に働くことができる環境整備を目的として、専門家によるリスクアセスメント、職場環境改善、転倒防止・腰痛予防のための身体機能チェックや運動指導等の取組が示されています。
-              </p>
-              <p>
-                プライズネス健康経営サポートでは、理学療法士の視点で、職場の作業動作・身体機能・職場環境を確認し、腰痛・転倒・労働災害予防に向けた取り組みの整理をサポートします。
-              </p>
-              <p>
-                補助金の対象可否は、事業内容・対象経費・申請内容・審査結果により異なります。補助金の交付を保証するものではありませんので、申請をご検討の場合は最新の公募要領・Q&Aをご確認ください。
-              </p>
-            </div>
-            <div class="subsidy-point-grid">
-              <article><span class="subsidy-icon">60</span><h3>60歳以上</h3><p>役員を除き、自社の労災保険適用の60歳以上の労働者が常時1名以上就労していること</p></article>
-              <article><span class="subsidy-icon">補</span><h3>対象事業者</h3><p>1年以上事業を実施している中小企業事業者が対象とされています。</p></article>
-              <article><span class="subsidy-icon">転</span><h3>転倒防止・腰痛予防</h3><p>身体機能チェックや運動指導等は、補助率1/2、上限額100万円の対象となる可能性があります。</p></article>
-              <article><span class="subsidy-icon">環</span><h3>職場環境改善</h3><p>専門家によるリスクアセスメント、職場環境改善、運動指導などの取組整理を支援します。</p></article>
-            </div>
-            <dl class="subsidy-summary">
-              <div><dt>申請期間</dt><dd>令和8年5月20日〜10月31日</dd></div>
-              <div><dt>専門家総合対策コース第1段階の申請期限</dt><dd>8月31日</dd></div>
-            </dl>
-            <a class="button button-primary" href="/contact">補助金活用について相談する</a>
-            <div class="official-docs">
-              <div>
-                <p class="eyebrow">公式資料</p>
-                <h3>公式リーフレット・Q&Aはこちら</h3>
-                <p>
-                  補助金の対象可否、申請要件、対象経費、申請期間、必要書類などは、年度ごとの公式リーフレット・Q&Aでご確認ください。プライズネスでは、職場の腰痛・転倒予防に向けた取り組み内容の整理をサポートします。
-                </p>
-              </div>
-              <div class="doc-card-grid">
-                <article class="doc-card">
-                  <img src="./assets/age-friendly-subsidy-leaflet-r8-thumb.jpg" alt="令和8年度エイジフレンドリー補助金公式リーフレット1ページ目" />
-                  <div><h4>令和8年度エイジフレンドリー補助金 公式リーフレット</h4><a class="button button-secondary" href="./assets/age-friendly-subsidy-leaflet-r8.pdf" target="_blank" rel="noopener">リーフレットを見る</a></div>
-                </article>
-                <article class="doc-card">
-                  <div class="doc-placeholder">Q&A</div>
-                  <div><h4>令和8年度エイジフレンドリー補助金 Q&A</h4><a class="button button-secondary" href="./assets/age-friendly-subsidy-qa-r8.pdf" target="_blank" rel="noopener">Q&Aを見る</a></div>
-                </article>
-              </div>
-            </div>
-            <div class="subsidy-notes">
-              <p>※本ページは制度の概要を紹介するものであり、補助金の採択・交付を保証するものではありません。</p>
-              <p>※補助金の対象可否、申請要件、対象経費は年度・事業内容・審査結果により異なります。</p>
-              <p>※申請前に、必ず公式の公募要領・Q&Aをご確認ください。</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section representative">
-        <div class="section-inner representative-layout">
-          <div class="representative-photo" aria-label="成田悟志の紹介写真枠">
-            <img src="./narita-satoshi-suit.jpg" alt="札幌・北海道の企業向け健康経営支援を行う理学療法士 成田悟志" />
-            <div class="photo-placeholder">
-              <span>代表</span>
-              <strong>成田 悟志</strong>
-            </div>
-          </div>
-          <div class="representative-copy">
-            <p class="eyebrow">代表メッセージ</p>
-            <h2>従業員の不調を、本人だけの問題で終わらせない。</h2>
-            <p>
-              私たちは、従業員の身体不調やケガを「本人の問題」だけで終わらせず、職場環境や作業動作、身体機能の両面から確認することが重要だと考えています。
-            </p>
-            <p>
-              理学療法士の専門的な視点で、従業員が長く安全に働き続けられる職場づくりを支援します。
-            </p>
-            <div class="staff-card">
-              <h3>成田 悟志</h3>
-              <p>理学療法士／株式会社プライズライフ 代表</p>
-              <p>
-                医療機関での臨床経験をもとに、リハビリジムプライズネスを運営。従業員の身体機能、作業動作、職場環境を総合的に確認し、腰痛・転倒・ケガ予防に向けた健康経営サポートを行っています。
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact" id="contact">
-        <div class="section-inner contact-inner">
-          <div>
-            <p class="eyebrow">お問い合わせ</p>
-            <h2>無料相談・資料請求・訪問相談のご相談はこちら。</h2>
-            <p>
-              企業規模、職種、現在の課題に合わせて、導入しやすい形をご提案します。まずは「何から始めるべきか」の整理からご相談ください。
-            </p>
-          </div>
-          <form class="contact-form" data-contact-form>
-            <label><span>会社名</span><input type="text" name="company" autocomplete="organization" /></label>
-            <label><span>お名前</span><input type="text" name="name" autocomplete="name" /></label>
-            <label><span>メールアドレス</span><input type="email" name="email" autocomplete="email" /></label>
-            <label><span>電話番号</span><input type="tel" name="phone" autocomplete="tel" /></label>
-            <label><span>業種</span><input type="text" name="industry" /></label>
-            <label><span>従業員数</span><input type="text" name="employees" /></label>
-            <label><span>ご相談内容</span><textarea name="message" rows="4">健康経営サポートについて相談したいです。</textarea></label>
-            <button class="button button-primary" type="submit">相談内容を作成する</button>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div>
-        <strong>プライズネス健康経営サポート</strong>
-        <span>会社名：株式会社プライズライフ</span>
-        <span>所在地：〒063-0812 北海道札幌市西区琴似2条3-1-1 チェストオオイビル3階</span>
-        <span>対応エリア：札幌市を中心に北海道内対応</span>
-      </div>
-      <div>
-        <span>電話番号：011-600-6048</span>
-        <span>メール：mail@prizenes.com</span>
-        <span>公式サイトURL：<a href="https://prizenes.com">https://prizenes.com</a></span>
-      </div>
-      <a href="#top">ページ上部へ</a>
-    </footer>
-
-    <script src="./script.js"></script>
-  </body>
+<script>
+// industry tabs
+const btns=document.querySelectorAll('.tab-btn');
+const panels=document.querySelectorAll('.tab-panel');
+btns.forEach(b=>{
+  b.addEventListener('click',()=>{
+    btns.forEach(x=>x.setAttribute('aria-selected','false'));
+    b.setAttribute('aria-selected','true');
+    panels.forEach(p=>p.classList.remove('active'));
+    document.getElementById('panel-'+b.dataset.tab).classList.add('active');
+  });
+});
+</script>
+</body>
 </html>
-
