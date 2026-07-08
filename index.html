@@ -84,6 +84,31 @@ section{padding:88px 0}
 .sec-title{font-size:clamp(24px,3.4vw,34px);font-weight:900;margin-bottom:16px}
 .sec-lead{color:var(--muted);max-width:680px;font-size:15.5px}
 
+/* ---------- news ---------- */
+.news-section{background:linear-gradient(180deg,#fff 0%,var(--navy-soft) 100%)}
+.news-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:28px}
+.news-grid{display:grid;gap:18px}
+.news-card{
+  display:grid;grid-template-columns:130px 1fr;gap:22px;align-items:start;
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;box-shadow:var(--shadow);
+}
+.news-card time{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:42px;border-radius:999px;background:var(--green-soft);
+  color:var(--green-deep);font-weight:700;font-size:13px;
+}
+.news-card h3{font-size:20px;margin-bottom:8px}
+.news-card p{color:var(--muted);font-size:15.5px;margin-bottom:12px}
+.news-card a{color:var(--green-deep);font-weight:700}
+.news-card a:hover{text-decoration:underline}
+@media(max-width:760px){
+  .news-head{display:block}
+  .news-card{grid-template-columns:1fr;padding:20px;gap:12px}
+  .news-card time{justify-content:flex-start;width:max-content;padding:0 14px}
+  .news-card h3{font-size:18px}
+}
+
 /* ---------- buttons ---------- */
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:8px;
@@ -829,6 +854,46 @@ footer a:hover{color:#3DD68C}
   </div>
 </section>
 
+<!-- ================= NEWS ================= -->
+<section class="news-section" id="news">
+  <div class="wrap">
+    <div class="news-head">
+      <div>
+        <span class="eyebrow">新着情報</span>
+        <h2 class="sec-title">健康経営・腰痛予防・労災予防に役立つ記事</h2>
+        <p class="sec-lead">札幌・北海道の企業担当者に向けて、現場で取り組みやすい健康経営サポートの考え方をお届けします。</p>
+      </div>
+      <a class="btn btn-outline btn-sm" href="/blog/keieisha-kenko-taoreru-mae">最新記事を読む</a>
+    </div>
+    <div class="news-grid">
+      <article class="news-card">
+        <time datetime="2026-07-07">2026.07.07</time>
+        <div>
+          <h3>社長が倒れたら、会社も止まる。経営者が「倒れる前」にやる健康管理について解説しました</h3>
+          <p>中小企業では、社長の健康リスクがそのまま経営リスクになります。保険やBCPは「倒れた後」の備え。理学療法士の視点から、経営者が倒れる前にできる身体づくりを解説しました。</p>
+          <a href="/blog/keieisha-kenko-taoreru-mae">記事を読む</a>
+        </div>
+      </article>
+      <article class="news-card">
+        <time datetime="2026-07-07">2026.07.07</time>
+        <div>
+          <h3>介護・製造・運送の現場でできる、腰痛・転倒予防の実践ポイントを解説しました</h3>
+          <p>厚生労働省の腰痛予防対策指針をもとに、介護・製造・運送それぞれの現場で今日から始められる腰痛・転倒予防の具体策を、理学療法士の視点で整理しました。</p>
+          <a href="/blog/genba-yotsu-tento-yobo">記事を読む</a>
+        </div>
+      </article>
+      <article class="news-card">
+        <time datetime="2026-06-04">2026.06.04</time>
+        <div>
+          <h3>令和7年の労働災害発生状況をもとに、企業の転倒・腰痛予防について解説しました</h3>
+          <p>死亡災害は過去最少となった一方で、休業4日以上の死傷者数は横ばいの状況です。転倒・無理な動作・墜落転落に着目し、企業に求められる健康経営の取り組みを整理しました。</p>
+          <a href="/blog/occupational-accident-2025-health-management">記事を読む</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- ================= EXPERT ================= -->
 <section class="expert">
   <div class="wrap">
@@ -1204,6 +1269,8 @@ footer a:hover{color:#3DD68C}
         <a href="/workplace-low-back-pain-check">職場の腰痛リスクチェック表</a>
         <a href="/plans">料金プラン</a>
         <a href="/subsidy">エイジフレンドリー補助金について</a>
+        <a href="/blog/keieisha-kenko-taoreru-mae">経営者の健康管理の記事</a>
+        <a href="/blog/genba-yotsu-tento-yobo">現場の腰痛・転倒予防の記事</a>
         <a href="/blog/occupational-accident-2025-health-management">令和7年 労働災害発生状況の解説記事</a>
         <a href="/contact">お問い合わせ・無料相談</a>
       </nav>
