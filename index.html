@@ -397,6 +397,11 @@ nav.gnav a:hover{color:var(--green)}
 .plan-price{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:30px;color:var(--navy);margin-bottom:4px}
 .plan-price small{font-size:14px;font-weight:700;color:var(--muted)}
 .plan-tax{font-size:12px;color:var(--muted);margin-bottom:18px}
+.plan-note{font-size:13px;color:var(--green-deep);font-weight:700;margin:-10px 0 18px;line-height:1.65}
+.plan-context{
+  margin:26px 0 -12px;padding:18px 22px;border:1px solid #CFE5D8;border-radius:12px;
+  background:var(--green-soft);color:var(--ink);font-size:15px;line-height:1.8;
+}
 .plan ul{list-style:none;margin-bottom:18px}
 .plan li{position:relative;padding-left:22px;font-size:14px;margin-bottom:9px}
 .plan li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:700}
@@ -406,6 +411,10 @@ nav.gnav a:hover{color:var(--green)}
 }
 .plan-fit b{display:block;font-size:12px;color:var(--green);margin-bottom:3px;letter-spacing:.06em}
 .plan .btn{margin-top:auto;width:100%}
+.small-business-note{
+  margin-top:20px;padding:20px 24px;border-radius:12px;background:#F8F3EA;border:1px solid #E8DDCB;
+  color:var(--navy);font-size:16px;font-weight:700;line-height:1.8;text-align:center;
+}
 @media(max-width:880px){.plan-grid{grid-template-columns:1fr;max-width:480px;margin-left:auto;margin-right:auto}.plan.featured{order:-1}}
 
 /* ---------- subsidy ---------- */
@@ -1048,13 +1057,14 @@ footer a:hover{color:#3DD68C}
     <span class="eyebrow">料金プラン</span>
     <h2 class="sec-title">まずは小さく試して、効果を見て広げられます。</h2>
     <p class="sec-lead">いずれも訪問・準備・資料を含む法人向け価格です。従業員数・回数・内容により変動するため、まずは無料相談でお見積りください。</p>
+    <p class="plan-context">一般的な労災予防研修・コンサルティングの相場は半日5万〜15万円程度。国家資格者（理学療法士）が直接対応する価格として設定しています。</p>
 
     <div class="plan-grid">
       <div class="plan">
         <div class="plan-kind">STEP 1 ─ お試し導入</div>
         <h3>単発セミナー</h3>
         <div class="plan-price">55,000<small>円〜</small></div>
-        <div class="plan-tax">税込・1回 / 60〜90分</div>
+        <div class="plan-tax">税込・1回 / 60〜90分（30名程度までの目安。人数・内容により変動）</div>
         <ul>
           <li>腰痛予防・転倒予防・姿勢改善など選べるテーマ</li>
           <li>実技中心で「明日から使える」内容</li>
@@ -1069,6 +1079,7 @@ footer a:hover{color:#3DD68C}
         <h3>職場訪問評価</h3>
         <div class="plan-price">132,000<small>円〜</small></div>
         <div class="plan-tax">税込・1式（訪問評価＋レポート）</div>
+        <p class="plan-note">例）従業員30名でご利用の場合、お一人あたり約4,400円〜</p>
         <ul>
           <li>作業動作・姿勢・職場環境を現場で評価</li>
           <li>従業員の身体機能チェック</li>
@@ -1088,10 +1099,15 @@ footer a:hover{color:#3DD68C}
           <li>定期訪問（評価・指導・セミナーを組み合わせ）</li>
           <li>取組の効果測定と定期レポート</li>
           <li>健康経営・安全衛生活動の年間計画を伴走支援</li>
+          <li>単発でのご依頼を毎月重ねるより、継続サポートの方が割安になるケースが多いです</li>
         </ul>
         <div class="plan-fit"><b>こんな会社におすすめ</b>健康経営優良法人の認定を目指す会社／休職・離職を本気で減らしたい、対策を一過性で終わらせたくない会社</div>
         <a class="btn btn-outline" href="/contact">継続支援を相談する</a>
       </div>
+    </div>
+    <div class="small-business-note">
+      従業員数が少ない事業所さまも、内容を調整してご案内できます。<br>
+      まずは無料相談でご相談ください。
     </div>
   </div>
 </section>
@@ -1183,6 +1199,10 @@ footer a:hover{color:#3DD68C}
       <details>
         <summary>無料相談では何を聞かれますか? 営業されませんか?</summary>
         <div class="faq-a">業種・従業員構成・現在のお困りごとをお聞きし、「何から始めるべきか」を一緒に整理する場です。その場でのご契約を求めることはありません。相談の結果、導入が不要と判断されても問題ありません。</div>
+      </details>
+      <details>
+        <summary>予算が限られているのですが、相談しても大丈夫ですか?</summary>
+        <div class="faq-a">もちろんです。ご予算に応じて、セミナーのみ・訪問評価のみなど、内容を調整してご提案します。まずは概算をお聞かせください。</div>
       </details>
     </div>
   </div>
