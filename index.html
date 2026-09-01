@@ -427,9 +427,11 @@ nav.gnav a:hover{color:var(--green)}
 .sub-check h3{font-size:17px;font-weight:900;margin-bottom:18px;display:flex;gap:10px;align-items:center}
 .sub-check h3::before{content:"☑";color:var(--green);font-size:22px}
 .sub-check ul{list-style:none}
-.sub-check li{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--line);font-size:14.5px}
+.sub-check li{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--line);font-size:14.5px;line-height:1.8}
 .sub-check li::before{content:"✓";flex:none;width:22px;height:22px;border-radius:50%;background:var(--green-soft);
   color:var(--green);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:3px}
+.sub-check li span{display:block;min-width:0;flex:1}
+.sub-check li strong{font-weight:900;white-space:normal}
 .sub-check .sub-cta{margin-top:22px;text-align:center}
 .sub-check .sub-cta p{font-size:13.5px;font-weight:700;color:var(--navy);margin-bottom:12px}
 .sub-points{display:grid;gap:14px}
@@ -1123,9 +1125,9 @@ footer a:hover{color:#3DD68C}
       <div class="sub-check">
         <h3>30秒セルフチェック ── 当てはまりますか?</h3>
         <ul>
-          <li>役員を除く、労災保険適用の<strong>60歳以上の従業員が常時1名以上</strong>いる</li>
-          <li><strong>1年以上</strong>事業を実施している中小企業事業者である</li>
-          <li>転倒防止・腰痛予防、身体機能チェック、運動指導などの取組を検討したい</li>
+          <li><span>役員を除く、労災保険適用の<strong>60歳以上の従業員が常時1名以上</strong>いる</span></li>
+          <li><span><strong>1年以上</strong>事業を実施している中小企業事業者である</span></li>
+          <li><span>転倒防止・腰痛予防、身体機能チェック、運動指導などの取組を検討したい</span></li>
         </ul>
         <div class="sub-cta">
           <p>すべて当てはまりそうなら、対象になる可能性があります。<br>「うちは対象?」の段階から、無料でご相談いただけます。</p>
