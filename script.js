@@ -296,7 +296,7 @@ const lowBackCategories = {
       "階段や段差を荷物を持って移動することがある",
     ],
     comment:
-      "前かがみ、中腰、ひねり、重量物の取り扱いなど、腰部に負担がかかりやすい作業が多い可能性があります。作業姿勢、作業手順、持ち上げ動作の見直しが必要です。",
+      "前かがみ、中腰、ひねり、重量物の取り扱いなど、腰部に負担がかかりやすい作業が多い可能性があります。作業姿勢、作業手順、持ち上げ動作の見直しを検討しましょう。",
   },
   environment: {
     title: "B. 作業環境リスク",
@@ -312,7 +312,7 @@ const lowBackCategories = {
       "車両運転や機械操作など、振動を受ける作業がある",
     ],
     comment:
-      "作業台の高さ、作業スペース、床環境、照明、温度、振動など、職場環境が腰痛リスクに影響している可能性があります。作業環境の調整や整理整頓、動線の見直しが必要です。",
+      "作業台の高さ、作業スペース、床環境、照明、温度、振動など、職場環境が腰痛リスクに影響している可能性があります。作業環境の調整や整理整頓、動線の見直しを検討しましょう。",
   },
   body: {
     title: "C. 身体機能・健康リスク",
@@ -329,7 +329,7 @@ const lowBackCategories = {
       "睡眠不足や疲労が抜けにくい状態が続いている",
     ],
     comment:
-      "筋力、柔軟性、バランス、運動習慣、疲労状態など、個人の身体機能や健康状態に腰痛リスクがみられる可能性があります。理学療法士による身体機能チェックや個別運動指導が有効です。",
+      "筋力、柔軟性、バランス、運動習慣、疲労状態など、個人の身体機能や健康状態に腰痛リスクがみられる可能性があります。理学療法士による身体機能チェックや個別の運動指導を検討するとよいでしょう。",
   },
   system: {
     title: "D. 心理社会的・職場体制リスク",
@@ -385,7 +385,7 @@ function getLowBackOverall(total) {
     return {
       label: "最優先リスク",
       message:
-        "早急な対策が必要な状態です。腰痛が発生しやすい作業条件が重なっている可能性があります。職場環境の改善、作業方法の見直し、身体機能チェック、個別または小集団での運動指導を組み合わせた対策が必要です。",
+        "早めに対策を検討したい結果です。腰痛が発生しやすい作業条件が重なっている可能性があります。職場環境の改善、作業方法の見直し、身体機能チェック、個別または小集団での運動指導を組み合わせた対策を検討しましょう。",
     };
   }
   if (total >= 30) {
@@ -473,3 +473,45 @@ lowBackForm?.addEventListener("submit", (event) => {
   `;
   lowBackResult.scrollIntoView({ behavior: "smooth", block: "center" });
 });
+
+// ---------- 計測（GA4）：クリックや操作の回数のみ。入力内容・個人情報・健康情報は送らない ----------
+(function () {
+  function track(name, params) {
+    if (typeof window.gtag === "function") {
+      window.gtag("event", name, Object.assign({ page_path: location.pathname }, params || {}));
+    }
+  }
+  window.prizenesTrack = track;
+
+  document.addEventListener("click", function (event) {
+    const link = event.target.closest && event.target.closest("a[href]");
+    if (!link) return;
+    const href = link.getAttribute("href") || "";
+    if (href.indexOf("/contact") === 0) track("cta_contact_click", { link_text: (link.textContent || "").trim().slice(0, 40) });
+    else if (href.indexOf("/check") === 0 || href.indexOf("/workplace-low-back-pain-check") === 0) track("risk_check_link_click", { link_target: href.split("#")[0] });
+    else if (href.indexOf("tel:") === 0) track("phone_click");
+  });
+
+  [["[data-risk-form]", "health_30"], ["[data-low-back-form]", "low_back"]].forEach(function (pair) {
+    const form = document.querySelector(pair[0]);
+    if (!form) return;
+    let started = false;
+    form.addEventListener("change", function () {
+      if (started) return;
+      started = true;
+      track("risk_check_start", { check_type: pair[1] });
+    });
+    form.addEventListener("submit", function () {
+      // 判定ボタンが押された回数（未回答で止まった場合も含む）。結果の点数は送らない
+      track("risk_check_submit", { check_type: pair[1] });
+    });
+  });
+
+  const contact = document.querySelector("[data-contact-form]");
+  if (contact) {
+    contact.addEventListener("submit", function () {
+      // メール作成画面を開いた回数。実際の送信完了ではない
+      track("contact_mail_draft_open");
+    });
+  }
+})();

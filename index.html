@@ -9,6 +9,9 @@
 <meta property="og:description" content="従業員の腰痛・転倒・休職リスクを、理学療法士が職場単位で見える化。札幌・北海道対応。無料相談受付中。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://priseness-health-support.vercel.app/">
+<meta property="og:site_name" content="プライズネス健康経営サポート">
+<meta property="og:image" content="https://priseness-health-support.vercel.app/workplace-visit-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://priseness-health-support.vercel.app/">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EWVE5W7WNE"></script>
 <script>
@@ -36,8 +39,92 @@ gtag("config", "G-EWVE5W7WNE");
     "addressLocality": "札幌市西区",
     "streetAddress": "琴似2条3-1-1 チェストオオイビル3階"
   },
-  "areaServed": ["札幌市", "北海道"],
-  "parentOrganization": { "@type": "Organization", "name": "株式会社プライズライフ" }
+  "areaServed": [
+    "札幌市",
+    "北海道"
+  ],
+  "parentOrganization": {
+    "@type": "Organization",
+    "@id": "https://priseness-health-support.vercel.app/#organization",
+    "name": "株式会社プライズライフ",
+    "url": "https://prizenes.com"
+  },
+  "@id": "https://priseness-health-support.vercel.app/#service",
+  "image": "https://priseness-health-support.vercel.app/workplace-visit-og.jpg",
+  "employee": {
+    "@type": "Person",
+    "@id": "https://priseness-health-support.vercel.app/#narita",
+    "name": "成田悟志",
+    "jobTitle": "理学療法士",
+    "image": "https://priseness-health-support.vercel.app/narita-satoshi-suit.jpg",
+    "worksFor": {
+      "@id": "https://priseness-health-support.vercel.app/#organization"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "従業員が数名の小さな会社でも依頼できますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、可能です。従業員数名の事業所から導入いただけます。規模に合わせて内容と費用を調整しますので、まずは無料相談でご状況をお聞かせください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "業務時間中に実施できますか? 現場を止めたくないのですが。",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "現場を止めない形で設計します。通常業務中の動作をそのまま評価したり、朝礼・休憩・点呼の時間を活用した短時間プログラムにしたりと、現場の運用に合わせて柔軟に対応します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "医療行為やマッサージをしてもらえるのですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "本サービスは治療・医療行為ではなく、予防のための評価・運動指導・職場改善支援です。すでに強い痛みやケガがある方には、適切な医療機関の受診をご案内します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "補助金の申請まで代行してもらえますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "申請手続きの代行は行っていませんが、補助金活用を見据えた取組内容（身体機能チェック・運動指導・職場改善など）の整理をサポートします。対象可否や申請要件は、最新の公募要領・Q&Aをご確認ください。「対象になりそうか」の段階からの無料相談も歓迎です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "札幌市外でも対応してもらえますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "札幌市を中心に、北海道内の企業・事業所に対応しています。エリアによっては交通費等を別途いただく場合がありますので、無料相談時にご確認ください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "無料相談では何を聞かれますか? 営業されませんか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "業種・従業員構成・現在のお困りごとをお聞きし、「何から始めるべきか」を一緒に整理する場です。その場でのご契約を求めることはありません。相談の結果、導入が不要と判断されても問題ありません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "予算が限られているのですが、相談しても大丈夫ですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "もちろんです。ご予算に応じて、セミナーのみ・訪問評価のみなど、内容を調整してご提案します。まずは概算をお聞かせください。"
+      }
+    }
+  ]
 }
 </script>
 <style>
@@ -67,7 +154,7 @@ body{
   -webkit-font-smoothing:antialiased;
   padding-bottom:0;
 }
-img{max-width:100%;display:block}
+img{max-width:100%;height:auto;display:block}
 a{color:inherit;text-decoration:none}
 h1,h2,h3{font-family:"Zen Kaku Gothic New","Noto Sans JP",sans-serif;line-height:1.45;color:var(--navy)}
 .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
@@ -389,7 +476,7 @@ nav.gnav a:hover{color:var(--green)}
 }
 .plan.featured{border-color:var(--green);box-shadow:var(--shadow-lg)}
 .plan.featured::before{
-  content:"まずはここから · 一番選ばれています";position:absolute;top:-15px;left:50%;transform:translateX(-50%);
+  content:"まずはここから · おすすめ";position:absolute;top:-15px;left:50%;transform:translateX(-50%);
   background:var(--green);color:#fff;font-size:12px;font-weight:700;border-radius:999px;padding:6px 18px;white-space:nowrap;
 }
 .plan-kind{font-size:12.5px;font-weight:700;color:var(--green);letter-spacing:.1em;margin-bottom:6px}
@@ -547,7 +634,7 @@ footer a:hover{color:#3DD68C}
 <header>
   <div class="wrap header-in">
     <a class="brand" href="#top">
-      <img src="/assets/prizenes-logo-mark.png" alt="プライズネス ロゴ">
+      <img width="96" height="89" src="/assets/prizenes-logo-mark-96.png" alt="プライズネス ロゴ">
       <span>プライズネス<small>健康経営サポート｜札幌・北海道</small></span>
     </a>
     <nav class="gnav" aria-label="グローバルナビゲーション">
@@ -556,6 +643,7 @@ footer a:hover{color:#3DD68C}
       <a href="#plans">料金</a>
       <a href="#subsidy">補助金</a>
       <a href="#faq">よくある質問</a>
+      <a href="/blog">コラム</a>
     </nav>
     <div class="header-cta">
       <div class="header-tel">お電話でのご相談<strong>011-600-6048</strong></div>
@@ -582,9 +670,9 @@ footer a:hover{color:#3DD68C}
       </div>
     </div>
     <div class="hero-visual">
-      <img class="hero-photo" src="/workplace-visit.png" alt="札幌の職場で従業員の作業姿勢と身体の使い方を確認する理学療法士" fetchpriority="high" decoding="async">
+      <img width="1600" height="900" class="hero-photo" src="/workplace-visit.webp" alt="札幌の職場で従業員の作業姿勢と身体の使い方を確認する理学療法士" fetchpriority="high" decoding="async">
       <div class="report-card" aria-hidden="true">
-      <div class="report-title">リスク見える化レポート</div>
+      <div class="report-title">レポートのイメージ（見本）</div>
       <div class="risk-row">
         <div class="label"><em>腰痛リスク</em><em style="color:#C0533B">高</em></div>
         <div class="bar"><i class="high"></i></div>
@@ -880,25 +968,25 @@ footer a:hover{color:#3DD68C}
       <article class="news-card">
         <time datetime="2026-10-15">2026.10.15</time>
         <div>
+          <h3>職場の腰痛対策は何から始める？企業担当者向けの進め方を解説しました</h3>
+          <p>厚生労働省の腰痛予防対策指針の考え方に沿って、現状把握から作業・環境の見直し、教育、続ける体制づくりまでを整理しました。担当者がすぐ使えるチェックリスト付きです。</p>
+          <a href="/blog/shokuba-yotsu-taisaku-hajimekata">記事を読む</a>
+        </div>
+      </article>
+      <article class="news-card">
+        <time datetime="2026-10-15">2026.10.15</time>
+        <div>
+          <h3>安全大会の講師を依頼するときのテーマ・費用・準備をまとめました</h3>
+          <p>全国安全週間や全国労働衛生週間に合わせた時期、課題に合わせたテーマ選び、費用の決まり方、当日までの準備を、担当者向けチェックリスト付きで紹介しています。</p>
+          <a href="/blog/anzen-taikai-koshi-irai">記事を読む</a>
+        </div>
+      </article>
+      <article class="news-card">
+        <time datetime="2026-10-15">2026.10.15</time>
+        <div>
           <h3>北海道の冬の転倒災害を防ぐ。企業ができる凍結路面対策と「転ばない身体づくり」を解説しました</h3>
-          <p>北海道では転倒災害の5割以上が冬季に発生しています。転びやすい場所、職場の環境対策、靴と歩き方、高年齢の従業員の身体づくりまで、理学療法士の視点で整理しました。</p>
+          <p>北海道では転倒災害の5割以上が冬季に発生しています。転びやすい場所、職場の環境対策、靴と歩き方、高年齢の従業員の身体づくりまで整理しました。</p>
           <a href="/blog/fuyu-tento-yobo-hokkaido">記事を読む</a>
-        </div>
-      </article>
-      <article class="news-card">
-        <time datetime="2026-10-15">2026.10.15</time>
-        <div>
-          <h3>エイジフレンドリー補助金で転倒・腰痛予防に取り組むには。令和8年度の仕組みと来年度に向けた準備を解説しました</h3>
-          <p>令和8年度はリスクアセスメントを起点にした2段階制になり、身体機能チェックと運動指導も対象です。制度の要点と、今から進められる準備をまとめました。</p>
-          <a href="/blog/age-friendly-hojokin-junbi">記事を読む</a>
-        </div>
-      </article>
-      <article class="news-card">
-        <time datetime="2026-10-15">2026.10.15</time>
-        <div>
-          <h3>健康経営優良法人（中小規模法人部門）の取り方と、次回に向けて中小企業が今からやることを解説しました</h3>
-          <p>健康宣言、必須項目、認定に必要な項目数の要点と、運動機会の増進や高年齢従業員への取組など、今から積み上げられる取組を紹介しています。</p>
-          <a href="/blog/kenko-keiei-yuryo-hojin-chusho">記事を読む</a>
         </div>
       </article>
     </div>
@@ -909,7 +997,7 @@ footer a:hover{color:#3DD68C}
 <section class="expert">
   <div class="wrap">
     <div class="expert-photo">
-      <img src="/narita-satoshi-suit.jpg" alt="札幌で企業の健康経営を支援する理学療法士 成田悟志">
+      <img width="1280" height="1109" src="/narita-satoshi-suit.webp" alt="札幌で企業の健康経営を支援する理学療法士 成田悟志">
       <div class="expert-name"><small>理学療法士／株式会社プライズライフ 代表</small><b>成田 悟志</b></div>
     </div>
     <div>
@@ -934,7 +1022,7 @@ footer a:hover{color:#3DD68C}
           <div><b>札幌でリハビリジム「プライズネス」を運営</b><span>札幌市西区琴似で運動施設を実際に運営。地域に拠点があるからこそ、訪問・継続支援にすぐ動けます。</span></div>
         </li>
       </ul>
-      <div class="expert-quote">「従業員の腰痛やケガを<b>本人の問題で終わらせない</b>こと。身体機能・作業動作・職場環境の3つをあわせて見ることで、初めて再発しない対策になります。まずは現場の課題を聞かせてください。」</div>
+      <div class="expert-quote">「従業員の腰痛やケガを<b>本人の問題で終わらせない</b>こと。身体機能・作業動作・職場環境の3つをあわせて見ることで、その職場に合った対策を考えられます。まずは現場の課題を聞かせてください。」</div>
     </div>
   </div>
 </section>
@@ -965,7 +1053,7 @@ footer a:hover{color:#3DD68C}
 
     <div class="svc-grid">
       <div class="svc-card">
-        <img src="/service-risk-evaluation.png" alt="職場を訪問し作業のリスクを評価する理学療法士" loading="lazy" decoding="async">
+        <img width="1600" height="900" src="/service-risk-evaluation.webp" alt="職場を訪問し作業のリスクを評価する理学療法士" loading="lazy" decoding="async">
         <div class="svc-body">
           <div class="svc-step">SERVICE 01</div>
           <h3>職場訪問評価</h3>
@@ -974,7 +1062,7 @@ footer a:hover{color:#3DD68C}
         </div>
       </div>
       <div class="svc-card">
-        <img src="/service-body-check.png" alt="従業員の筋力・バランスなど身体機能チェックの様子" loading="lazy" decoding="async">
+        <img width="1600" height="900" src="/service-body-check.webp" alt="従業員の筋力・バランスなど身体機能チェックの様子" loading="lazy" decoding="async">
         <div class="svc-body">
           <div class="svc-step">SERVICE 02</div>
           <h3>身体機能チェック</h3>
@@ -983,7 +1071,7 @@ footer a:hover{color:#3DD68C}
         </div>
       </div>
       <div class="svc-card">
-        <img src="/service-health-seminar.png" alt="札幌の企業向け腰痛・転倒予防セミナーの様子" loading="lazy" decoding="async">
+        <img width="1600" height="900" src="/service-health-seminar.webp" alt="札幌の企業向け腰痛・転倒予防セミナーの様子" loading="lazy" decoding="async">
         <div class="svc-body">
           <div class="svc-step">SERVICE 03</div>
           <h3>腰痛・転倒予防セミナー</h3>
@@ -992,7 +1080,7 @@ footer a:hover{color:#3DD68C}
         </div>
       </div>
       <div class="svc-card">
-        <img src="/service-workplace-improvement.png" alt="評価結果をもとに職場の改善提案を行う様子" loading="lazy" decoding="async">
+        <img width="1600" height="900" src="/service-workplace-improvement.webp" alt="評価結果をもとに職場の改善提案を行う様子" loading="lazy" decoding="async">
         <div class="svc-body">
           <div class="svc-step">SERVICE 04</div>
           <h3>改善提案レポート</h3>
@@ -1001,7 +1089,7 @@ footer a:hover{color:#3DD68C}
         </div>
       </div>
       <div class="svc-card">
-        <img src="/service-exercise-guidance.png" alt="従業員への運動指導を継続的に行う様子" loading="lazy" decoding="async">
+        <img width="1600" height="900" src="/service-exercise-guidance.webp" alt="従業員への運動指導を継続的に行う様子" loading="lazy" decoding="async">
         <div class="svc-body">
           <div class="svc-step">SERVICE 05</div>
           <h3>継続サポート</h3>
@@ -1010,7 +1098,7 @@ footer a:hover{color:#3DD68C}
         </div>
       </div>
       <div class="svc-card">
-        <img src="/service-work-movement.png" alt="補助金活用を見据えて作業動作を確認・整理する様子" loading="lazy" decoding="async">
+        <img width="1600" height="900" src="/service-work-movement.webp" alt="補助金活用を見据えて作業動作を確認・整理する様子" loading="lazy" decoding="async">
         <div class="svc-body">
           <div class="svc-step">OPTION</div>
           <h3>補助金活用の整理支援</h3>
@@ -1021,7 +1109,7 @@ footer a:hover{color:#3DD68C}
     </div>
 
     <div class="flow">
-      <h3>訪問評価の流れ — 5ステップ・最短2週間で現場評価まで</h3>
+      <h3>訪問評価の流れ — 5ステップ</h3>
       <div class="flow-steps">
         <div class="flow-step">
           <div class="flow-num">1</div>
@@ -1142,7 +1230,7 @@ footer a:hover{color:#3DD68C}
           </div>
           <div class="sub-point">
             <b><i>期間</i>令和8年度の申請期間</b>
-            <p>申請期間は令和8年5月20日〜10月31日。専門家総合対策コース第1段階の申請期限は8月31日です。早めの準備をおすすめします。</p>
+            <p>令和8年度の申請期間は5月20日〜10月31日（専門家総合対策コース第1段階は8月31日まで）と案内されていました。2026年10月15日時点で第1段階の受付は終了しており、第2段階などは延長が報じられています。最新の状況は公式情報でご確認ください。</p>
           </div>
           <div class="sub-point">
             <b><i>支援</i>プライズネスの役割</b>
@@ -1318,6 +1406,7 @@ btns.forEach(b=>{
   });
 });
 </script>
+    <script src="/script.js"></script>
     <!-- Vercel Web Analytics -->
     <script defer src="/_vercel/insights/script.js"></script>
 

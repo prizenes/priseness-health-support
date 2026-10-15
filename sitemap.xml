@@ -2,36 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://priseness-health-support.vercel.app/</loc>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://priseness-health-support.vercel.app/services</loc>
-  </url>
-  <url>
-    <loc>https://priseness-health-support.vercel.app/check</loc>
-  </url>
-  <url>
-    <loc>https://priseness-health-support.vercel.app/workplace-low-back-pain-check</loc>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://priseness-health-support.vercel.app/plans</loc>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://priseness-health-support.vercel.app/subsidy</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://priseness-health-support.vercel.app/check</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://priseness-health-support.vercel.app/workplace-low-back-pain-check</loc>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://priseness-health-support.vercel.app/contact</loc>
-  </url>
-  <url>
-    <loc>https://priseness-health-support.vercel.app/blog/occupational-accident-2025-health-management</loc>
-  </url>
-  <url>
-    <loc>https://priseness-health-support.vercel.app/blog/genba-yotsu-tento-yobo</loc>
-  </url>
-  <url>
-    <loc>https://priseness-health-support.vercel.app/blog/keieisha-kenko-taoreru-mae</loc>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://priseness-health-support.vercel.app/blog</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://priseness-health-support.vercel.app/blog/shokuba-yotsu-taisaku-hajimekata</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://priseness-health-support.vercel.app/blog/anzen-taikai-koshi-irai</loc>
     <lastmod>2026-10-15</lastmod>
   </url>
   <url>
@@ -44,6 +50,18 @@
   </url>
   <url>
     <loc>https://priseness-health-support.vercel.app/blog/kenko-keiei-yuryo-hojin-chusho</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://priseness-health-support.vercel.app/blog/keieisha-kenko-taoreru-mae</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://priseness-health-support.vercel.app/blog/genba-yotsu-tento-yobo</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://priseness-health-support.vercel.app/blog/occupational-accident-2025-health-management</loc>
     <lastmod>2026-10-15</lastmod>
   </url>
 </urlset>
