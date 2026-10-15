@@ -79,6 +79,12 @@ textarea {
   border-radius: 8px;
 }
 
+/* responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .brand-mark img {
   display: block;
   width: 38px;
@@ -181,7 +187,7 @@ textarea {
   border-radius: 8px;
   background:
     linear-gradient(180deg, rgba(11, 32, 56, 0), rgba(11, 32, 56, 0.38)),
-    url("./workplace-visit.png") center / cover;
+    url("./workplace-visit.webp") center / cover;
   box-shadow: var(--shadow);
 }
 
@@ -390,7 +396,7 @@ h3 {
 }
 
 .article-layout {
-  padding: clamp(48px, 8vw, 92px) 0;
+  padding: clamp(48px, 8vw, 92px) clamp(18px, 4vw, 32px);
 }
 
 .article-content {
@@ -787,27 +793,27 @@ h3 {
 }
 
 .service-photo-1 {
-  background-image: url("./service-work-movement.png");
+  background-image: url("./service-work-movement.webp");
 }
 
 .service-photo-2 {
-  background-image: url("./service-body-check.png");
+  background-image: url("./service-body-check.webp");
 }
 
 .service-photo-3 {
-  background-image: url("./service-risk-evaluation.png");
+  background-image: url("./service-risk-evaluation.webp");
 }
 
 .service-photo-4 {
-  background-image: url("./service-exercise-guidance.png");
+  background-image: url("./service-exercise-guidance.webp");
 }
 
 .service-photo-5 {
-  background-image: url("./service-workplace-improvement.png");
+  background-image: url("./service-workplace-improvement.webp");
 }
 
 .service-photo-6 {
-  background-image: url("./service-health-seminar.png");
+  background-image: url("./service-health-seminar.webp");
 }
 
 .check-list {
@@ -838,7 +844,7 @@ h3 {
   border-radius: 8px;
   background:
     linear-gradient(180deg, rgba(11, 32, 56, 0.02), rgba(11, 32, 56, 0.5)),
-    url("./narita-satoshi-suit.jpg") 54% 30% / cover;
+    url("./narita-satoshi-suit.webp") 54% 30% / cover;
   box-shadow: var(--shadow);
 }
 
@@ -1778,4 +1784,112 @@ h3 {
     align-items: flex-start;
     grid-template-columns: 1fr;
   }
+}
+
+/* ---------- blog: breadcrumb, notes, tables, checklists ---------- */
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+  margin-bottom: 18px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.breadcrumb a {
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.breadcrumb [aria-current="page"] {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.article-note {
+  margin-top: 28px;
+  padding: 16px 18px;
+  border-radius: 8px;
+  background: var(--soft);
+  color: var(--muted);
+  font-size: 15px !important;
+  line-height: 1.8;
+}
+
+.table-wrap {
+  margin: 18px 0 8px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.article-table {
+  width: 100%;
+  min-width: 520px;
+  border-collapse: collapse;
+  background: var(--white);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.article-table caption {
+  padding: 0 0 10px;
+  color: var(--muted);
+  font-size: 14px;
+  text-align: left;
+}
+
+.article-table th,
+.article-table td {
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.article-table th {
+  background: var(--soft);
+  color: var(--navy);
+  font-weight: 900;
+}
+
+.check-points {
+  display: grid;
+  gap: 10px;
+  margin: 16px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.check-points li {
+  position: relative;
+  padding: 12px 14px 12px 44px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.check-points li::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 14px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--green);
+  border-radius: 4px;
+}
+
+.subsidy-status-note {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-left: 4px solid var(--green);
+  background: var(--soft);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.article-content > * {
+  min-width: 0;
 }
