@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://priseness-health-support.vercel.app/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://priseness-health-support.vercel.app/services</loc>
@@ -30,7 +30,11 @@
   </url>
   <url>
     <loc>https://priseness-health-support.vercel.app/blog</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://priseness-health-support.vercel.app/blog/yukikaki-yotsu-yobo</loc>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://priseness-health-support.vercel.app/blog/kaigo-yotsu-yobo-kenshu</loc>
