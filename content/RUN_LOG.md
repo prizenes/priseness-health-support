@@ -9,3 +9,4 @@
 | 2026-10-20 08:51 | 自動（定期実行） | 雪かき・除雪作業の腰痛予防 / yukikaki-yotsu-yobo（10/27予定分を前倒し） | 新規PRを作成しマージ | check_site.py OK |
 | 2026-10-23 08:51 | 自動（定期実行） | 運送・倉庫業の腰痛対策 / unso-soko-yotsu-taisaku（10/30予定分を前倒し） | 新規PRを作成しマージ | check_site.py OK |
 | 2026-10-27 09:06 | 自動（定期実行） | 業種別の腰痛・転倒予防（大幅更新） / genba-yotsu-tento-yobo（11/03予定分を前倒し） | 新規PRを作成しマージ | check_site.py OK |
+| 2026-10-30 08:51 | 自動（定期実行） | 健康研修の効果測定 / kenshu-kouka-hyouka（11/06予定分を前倒し） | 新規PRを作成しマージ | check_site.py OK |
