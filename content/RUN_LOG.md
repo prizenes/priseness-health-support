@@ -11,3 +11,4 @@
 | 2026-10-27 09:06 | 自動（定期実行） | 業種別の腰痛・転倒予防（大幅更新） / genba-yotsu-tento-yobo（11/03予定分を前倒し） | 新規PRを作成しマージ | check_site.py OK |
 | 2026-10-30 08:51 | 自動（定期実行） | 健康研修の効果測定 / kenshu-kouka-hyouka（11/06予定分を前倒し） | 新規PRを作成しマージ | check_site.py OK |
 | 2026-11-03 08:50 | 自動（定期実行） | デスクワークの腰痛・肩こり対策 / desk-work-yotsu-katakori（11/10予定分を前倒し） | 新規PRを作成しマージ | check_site.py OK |
+| 2026-11-06 08:50 | 自動（定期実行） | 製造業の立ち作業・重量物の腰痛予防 / seizo-tachisagyo-yotsu（11/13予定分を前倒し） | 新規PRを作成しマージ | check_site.py OK |
