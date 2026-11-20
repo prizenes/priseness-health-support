@@ -15,3 +15,4 @@
 | 2026-11-10 08:51 | 自動（定期実行） | 中小企業の健康経営と運動支援 / chusho-kenko-keiei-undo（11/17予定分を前倒し） | 新規PRを作成しマージ | check_site.py OK |
 | 2026-11-13 08:51 | 自動（定期実行） | 小売業・飲食店の転倒・腰痛対策 / kouri-inshoku-tento-yotsu（予定行がないため新テーマを追加） | 新規PRを作成しマージ | check_site.py OK |
 | 2026-11-17 08:50 | 自動（定期実行） | 腰痛の労災認定と会社の予防策 / yotsu-rousai-nintei（予定行がないため新テーマを追加） | 新規PRを作成しマージ | check_site.py OK |
+| 2026-11-20 08:55 | 自動（定期実行） | 保育士の腰痛予防 / hoikushi-yotsu-yobo（予定行がないため新テーマを追加） | 新規PRを作成しマージ | check_site.py OK |
