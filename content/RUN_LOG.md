@@ -17,3 +17,4 @@
 | 2026-11-17 08:50 | 自動（定期実行） | 腰痛の労災認定と会社の予防策 / yotsu-rousai-nintei（予定行がないため新テーマを追加） | 新規PRを作成しマージ | check_site.py OK |
 | 2026-11-20 08:55 | 自動（定期実行） | 保育士の腰痛予防 / hoikushi-yotsu-yobo（予定行がないため新テーマを追加） | 新規PRを作成しマージ | check_site.py OK |
 | 2026-11-24 09:00 | 自動（定期実行） | 腰痛で休んだ従業員の職場復帰 / yotsu-kyugyo-shokuba-fukki（予定行がないため新テーマを追加） | 新規PRを作成しマージ | check_site.py OK |
+| 2026-11-27 09:00 | 自動（定期実行） | 食品工場の転倒・腰痛対策 / shokuhin-kojo-tento-yotsu（予定行がないため新テーマを追加） | 新規PRを作成しマージ | check_site.py OK |
